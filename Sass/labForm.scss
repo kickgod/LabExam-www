@@ -1,0 +1,198 @@
+$main-width : 64%;
+$main-min-width :1100px;
+$main-min-height : 300px; 
+$main-padding : 15px; 
+$form-margin-top-height:20px;
+
+
+ 
+@mixin font-style-define($one,$two) {
+    font: {
+      size: $one;
+      weight: $two;
+    }
+}
+
+.form-container{
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,.6);
+    display: block;
+    padding: 15px;
+    border: 1px solid gainsboro;
+
+    form{
+        margin-top: $form-margin-top-height;
+    }
+}
+
+$form-title-switch-font-size:24px;
+
+.form-title-switch{
+    font-size: $form-title-switch-font-size;
+    color: gray;
+    font-weight: 300;
+}
+
+.from-gab-char{
+    font-size: $form-title-switch-font-size + 2;
+    font-weight: 300;
+    color: rgba(0,0,0,.6);
+}
+.from-title-active{
+    text-shadow:2px 1px 1px rgba(0,0,0,.3);
+    color: rgba(0,0,0,.9);
+    font-size: 28px;
+}
+
+$form-width-normal:600px;
+$form-width-sm:400px;
+$form-width-lg:700px;
+
+.form-normal-width{
+    width: $form-width-sm;
+}
+
+.form-online{
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+$text-box-height:35px;
+$text-box-width:100%;
+
+%form-Component{
+    height: $text-box-height;
+    border-radius: 5px;
+    width: $text-box-width;
+}
+
+$form-Component-margint-updown:15px;
+
+.form-textbox{
+    @extend %form-Component;
+    text-indent: 10px;
+}
+
+$padding-button-updown:10px;
+$padding-button-leftright:15px;
+
+
+.form-submit{
+    height: $text-box-height+5;
+    border-radius: 5px;
+    text-align: center;
+    border:none;
+    padding-left:$padding-button-leftright;
+    padding-right: $padding-button-leftright;
+    padding-bottom: $padding-button-updown;
+    padding-top: $padding-button-updown;
+    margin-top: $form-Component-margint-updown;
+    margin-bottom: $form-Component-margint-updown;
+    letter-spacing: 3px;
+}
+
+.form-submit:focus{
+    outline: none;
+}
+
+.form-submit-size-cover{
+    width: $text-box-width;
+}
+
+.form-submit-info{
+    color: white;
+    background-color: RGB(13,116,161);
+}
+
+.form-submit-info:hover{
+    background-color:RGB(11,97,134);
+}
+
+.form-textbox:focus{
+    outline: none;
+    border:2px solid rgba(65, 183, 253, 1);
+}
+
+.form-label{
+    @include font-style-define(16px,300);
+}
+
+.form-group{
+    margin: $form-Component-margint-updown auto;
+}
+
+.form-notice-down{
+    margin-top: 0 - $form-Component-margint-updown;
+}
+
+$vertifacation-box-height:25px;
+
+.form-verification-box{
+       width: 100%;
+       height: $vertifacation-box-height;
+       border-radius: 5px;
+       
+       border:1px solid green;
+}
+
+/* 专用Css 不属于整体  */
+$width-textbox:350px;
+$height-textbox:35px;
+
+.textBox{
+    height: $height-textbox;
+    width: $width-textbox;
+    border-radius:$height-textbox / 2;    
+}
+
+.textBox:focus{
+    outline: none;
+    border:2px solid rgba(65, 183, 253, 1);
+}
+
+.textBox-with-button{
+    height: $height-textbox;
+    width: $width-textbox;
+    border-radius:$height-textbox / 2;    
+}
+.textBox-with-button:focus{
+    outline: none;
+    border:2px solid rgba(65, 183, 253, 1);  
+}
+
+.textBox-square{
+    width: 25px;
+    height: 25px;
+}
+
+.textBox-square:focus{
+    outline: none;
+    border:2px solid rgba(65, 183, 253, 1);  
+}
+
+.textBox-square-answer{
+    width: 55px;
+    height: 25px;
+}
+
+.textBox-square-answer:focus{
+    outline: none;
+    border:2px solid rgba(65, 183, 253, 1);  
+}
+
+.text-box-shuaxing{
+    width: 90px;
+    border-radius: 7px;
+    height: $height-textbox - 5;
+    background-color: RGB(13,116,161);
+    border: none;
+    color: white;
+}
+.text-box-shuaxing:hover{
+    background-color:RGB(0,81,116);
+}
+.text-box-shuaxing:focus{
+    outline: none;
+    border:2px solid rgba(65, 183, 253, 1);   
+}

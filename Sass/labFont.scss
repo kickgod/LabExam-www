@@ -1,0 +1,120 @@
+/*
+   掌管文字 标题 段落的样式：类名开头 text,font,title
+   jx 2018/9/24
+*/
+
+.font-color-grey-more{
+    color: gray;
+}
+
+.font-color-grey{
+    color: gainsboro;
+}
+
+.font-color-grey-little{
+    color: rgba(217,217,217,0.4);
+}
+
+.font-size-sm{
+    font-size: 13px;
+}
+
+.font-size-normal{
+    font-size: 16px;
+}
+$indent-Gap:35px;
+
+@while $indent-Gap >= 5px{
+    .text-indent-#{$indent-Gap}{
+        text-indent: $indent-Gap;
+    }
+    $indent-Gap:$indent-Gap - 5;
+} 
+
+.font-color-white{
+    color: white;
+}
+
+@each $var in center,left,right {
+    .text-#{$var}{
+        text-align: $var;
+    }
+}
+
+@mixin font-style-define($one,$two) {
+    font: {
+      size: $one;
+      weight: $two;
+    }
+} 
+
+$tittle-gap-length:18px; 
+
+$font-size-gap:30;
+@while  $font-size-gap>=10 {
+    .font-size-#{$font-size-gap}{
+         font-size:  $font-size-gap + 0px;
+    }
+    $font-size-gap: $font-size-gap - 1;
+}
+
+.text-title-little{
+    //小标题
+    padding-top: $tittle-gap-length;
+    @include font-style-define(14px,600);
+    padding-bottom: $tittle-gap-length;
+}
+
+.text-module-left-white{
+    //小标题-黑中嵌入白字
+    @extend .font-color-white;
+    @include font-style-define(14px,300);
+}
+
+.title-module-left{
+    @include font-style-define(14px,300);
+    color: RGB(13,1,1);
+}
+
+.title-module-left-grey{
+    @include font-style-define(14px,300);
+    color: white;
+}
+
+@mixin getOpacity($opacity-val) {
+    filter:alpha(opacity=$opacity-val);     /* for IE8 and earlier */
+    opacity:($opacity-val/100);             /* for IE9 and other browsers */
+}
+/* Give it a transparency */ 
+
+$opacity-value-max:95;
+
+@while $opacity-value-max >= 5 {
+    .transparent-#{$opacity-value-max}{
+        @include getOpacity($opacity-value-max);
+    }
+    $opacity-value-max :  $opacity-value-max - 5;
+} 
+
+.title-module-N-normal{
+    text-shadow: 2px 2px 3px gray;
+}
+.border-n-down{
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid rgba(217,217,217,0.8);
+}
+
+.title-module-N-normal-no-Shadow{
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(217,217,217,0.8);
+}
+
+.text-shadow-grey{
+    text-shadow:2px 2px 2px rgba(217,217,217,0.8);
+}
+
+.text-shadow-black{
+    text-shadow:2px 2px 2px rgba(0,0,0,0.6);
+}

@@ -1,0 +1,47 @@
+.list{
+    $font-weight-value:300;
+    $border-grey-value:1px solid  rgba(128,128,128,0.5);
+    $list-padding-value:10px;
+    .list-item{
+        padding-top: $list-padding-value;
+        padding-bottom: $list-padding-value;
+        padding-left: 15px;
+        font-weight: $font-weight-value;
+        border: $border-grey-value;
+        border-top: none;
+    }    
+    .list-item:hover{
+        background-color:rgba(38,38,38,.1);
+    }
+    .list-item:first-child{
+        border: $border-grey-value;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .list-item:last-child{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .active{
+        background-color: RGB(51,122,183);
+        color: white;
+    }
+    .active:hover{
+        background-color: RGB(51,122,183);
+        color: white;       
+    }
+    .danger{
+        background-color: RGB(217,83,79);
+        font-weight: 400;
+        color: white;
+    }
+    .danger:hover{
+        background-color: RGB(216,30,6);
+        font-weight: 400;
+        color: white;
+    }
+}
+
+.list-unstyle{
+    list-style: none;
+}

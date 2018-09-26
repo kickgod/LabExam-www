@@ -1,0 +1,34 @@
+/* 颜色背景主题*/
+.bc-grey{
+    background: RGB(64,64,64);
+}
+.br-white{
+    background-color: #fff;
+}
+@mixin CreateBorder($px,$cl,$ty) {
+    border : {
+        color: $cl;
+        width: $px;
+        style: $ty;
+    }
+}
+
+.border-module-grey{
+    @include CreateBorder(1px,rgba(38,38,38,0.7),solid)
+}
+
+$border-radius-value-gap:20;
+
+@while $border-radius-value-gap >= 1 {
+    .border-radius-#{$border-radius-value-gap}{
+        border-radius:$border-radius-value-gap;
+    }
+    $border-radius-value-gap: $border-radius-value-gap - 1
+}
+     
+.shadow{
+    box-shadow: 2px 2px 2px 2px grey;
+} 
+
+
+

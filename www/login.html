@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Content/jquery-ui.min.css">
+    <link rel="stylesheet" href="../Content/css/labEntry.min.css"/>
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../Scripts/jquery-ui.min.js"></script>
+    <script src="../Scripts/labLayout.js"></script>
+    <style>
+        #Login{
+            width: 600px;
+            height: 420px;
+        } 
+        .mask-content{
+            width: 600px;
+        }
+    </style>
+    <title>实验室安全教育在线-登陆</title>
+</head>
+<body class=" ">
+    <div id="Login" class="br-white  layout-center  padding-15 box-sizing-include-padding-border">
+        <div>
+            <img src="../Resources/Img/run.png" class="layout-image-center"  width="64px" />   
+        </div>
+        <div class="text-center text-title-little font-color-grey-more">
+           四川师范大学安全教育在线
+        </div>
+        <form>
+            <div class="form-group flex-layout flex-direction-row flex-wrap-nowrap" >
+                <div class="flex-item-2">
+                    <img src="../Resources/LoginIcon/ID_NO_Lanse.png" width="40px" class="layout-image-right">
+                </div>
+                <div class="flex-item-8 margin-left-30px">
+                  <input type="text" placeholder="请输入账号" class="textBox text-indent-15px " />
+                </div>
+            </div>
+            <div class="form-group flex-layout flex-direction-row flex-wrap-nowrap" >
+                <div class="flex-item-2">
+                    <img src="../Resources/LoginIcon/password.png" width="38px" class="layout-image-right">
+                </div>
+                <div class="flex-item-8 margin-left-30px">
+                    <input type="text" placeholder="请输入账号" class="textBox text-indent-15px " />
+                </div>
+            </div>
+            <div class="form-group flex-layout flex-direction-row flex-wrap-nowrap ">
+                <div class="flex-item-2">
+                    
+                </div>
+                <div class="flex-item-8 margin-left-30px padding-left-10px">
+                    <input type="text" value="5" class="textBox-square text-center" >
+                    <span class=" padding-left-right-normal "> + </span>
+                    <input type="text" value="5" class="textBox-square text-center" >
+                    <span class=" padding-left-right-normal "> = </span>
+                    <input type="text" value="10" class="textBox-square-answer text-center" >
+                    <button type="button" class="margin-left-20px text-box-shuaxing ">刷新</button>
+                </div>
+                
+            </div>
+            <div class=" form-group flex-layout flex-direction-row flex-wrap-nowrap margin-bottom-15-down">
+                <div class="flex-item-2">
+                     
+                </div>
+                <div class="flex-item-8 margin-left-30px">
+                        <button type="submit" class="textBox-with-button form-submit form-submit-info">立即登陆</button>
+                </div>
+            </div>
+            <div class="flex-layout margin-15-down">
+                <div class="flex-item-2">
+                     
+                </div>
+                <div class="flex-item-8 margin-left-30px float-layout padding-left-10px">
+                    <label><input type="checkbox" checked > <span class="font-size-sm font-color-grey-more">十天之内自动登陆 </span> </label>
+                    /<a href="#"> 忘记密码</a>  
+                </div>
+            </div>
+        </form>
+    </div>  
+    <div>
+        <div class="main text-center font-color-grey-more position-fixed" style="bottom: 0px;left: 0px; width: 100%;">
+             <small>© All Right Reserved . 四川师范大学计算机科学学院 版权所有 版本号1.0.0.2018.9</small>
+        </div>
+     </div>
+     <!--
+              <div class="mask">
+
+     </div>
+     <div class="mask-content">
+         <div class="mask-module-title">
+             错误信息
+         </div>
+         <div class="mask-module-content">
+            你的密码输入错误！请重新输入
+         </div>
+         <div class="mask-module-close">
+            <button class="layout-image-center btn-danger">立即关闭</button> 
+         </div>
+     </div>
+     -->
+</body>
+</html>

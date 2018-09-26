@@ -1,0 +1,333 @@
+@charset "UTF-8";
+/*
+   掌管文字 标题 段落的样式：类名开头 text,font,title
+   jx 2018/9/24
+*/
+.font-color-grey-more {
+  color: gray;
+}
+
+.font-color-grey {
+  color: gainsboro;
+}
+
+.font-color-grey-little {
+  color: rgba(217, 217, 217, 0.4);
+}
+
+.font-size-sm {
+  font-size: 13px;
+}
+
+.font-size-normal {
+  font-size: 16px;
+}
+
+.text-indent-35px {
+  text-indent: 35px;
+}
+
+.text-indent-30px {
+  text-indent: 30px;
+}
+
+.text-indent-25px {
+  text-indent: 25px;
+}
+
+.text-indent-20px {
+  text-indent: 20px;
+}
+
+.text-indent-15px {
+  text-indent: 15px;
+}
+
+.text-indent-10px {
+  text-indent: 10px;
+}
+
+.text-indent-5px {
+  text-indent: 5px;
+}
+
+.font-color-white, .text-module-left-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.font-size-29 {
+  font-size: 29px;
+}
+
+.font-size-28 {
+  font-size: 28px;
+}
+
+.font-size-27 {
+  font-size: 27px;
+}
+
+.font-size-26 {
+  font-size: 26px;
+}
+
+.font-size-25 {
+  font-size: 25px;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.font-size-23 {
+  font-size: 23px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.font-size-21 {
+  font-size: 21px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-19 {
+  font-size: 19px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-17 {
+  font-size: 17px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-15 {
+  font-size: 15px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-13 {
+  font-size: 13px;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-11 {
+  font-size: 11px;
+}
+
+.font-size-10 {
+  font-size: 10px;
+}
+
+.text-title-little {
+  padding-top: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 18px;
+}
+
+.text-module-left-white {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.title-module-left {
+  font-size: 14px;
+  font-weight: 300;
+  color: RGB(13, 1, 1);
+}
+
+.title-module-left-grey {
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+
+/* Give it a transparency */
+.transparent-95 {
+  filter: alpha(opacity=95);
+  /* for IE8 and earlier */
+  opacity: 0.95;
+  /* for IE9 and other browsers */
+}
+
+.transparent-90 {
+  filter: alpha(opacity=90);
+  /* for IE8 and earlier */
+  opacity: 0.9;
+  /* for IE9 and other browsers */
+}
+
+.transparent-85 {
+  filter: alpha(opacity=85);
+  /* for IE8 and earlier */
+  opacity: 0.85;
+  /* for IE9 and other browsers */
+}
+
+.transparent-80 {
+  filter: alpha(opacity=80);
+  /* for IE8 and earlier */
+  opacity: 0.8;
+  /* for IE9 and other browsers */
+}
+
+.transparent-75 {
+  filter: alpha(opacity=75);
+  /* for IE8 and earlier */
+  opacity: 0.75;
+  /* for IE9 and other browsers */
+}
+
+.transparent-70 {
+  filter: alpha(opacity=70);
+  /* for IE8 and earlier */
+  opacity: 0.7;
+  /* for IE9 and other browsers */
+}
+
+.transparent-65 {
+  filter: alpha(opacity=65);
+  /* for IE8 and earlier */
+  opacity: 0.65;
+  /* for IE9 and other browsers */
+}
+
+.transparent-60 {
+  filter: alpha(opacity=60);
+  /* for IE8 and earlier */
+  opacity: 0.6;
+  /* for IE9 and other browsers */
+}
+
+.transparent-55 {
+  filter: alpha(opacity=55);
+  /* for IE8 and earlier */
+  opacity: 0.55;
+  /* for IE9 and other browsers */
+}
+
+.transparent-50 {
+  filter: alpha(opacity=50);
+  /* for IE8 and earlier */
+  opacity: 0.5;
+  /* for IE9 and other browsers */
+}
+
+.transparent-45 {
+  filter: alpha(opacity=45);
+  /* for IE8 and earlier */
+  opacity: 0.45;
+  /* for IE9 and other browsers */
+}
+
+.transparent-40 {
+  filter: alpha(opacity=40);
+  /* for IE8 and earlier */
+  opacity: 0.4;
+  /* for IE9 and other browsers */
+}
+
+.transparent-35 {
+  filter: alpha(opacity=35);
+  /* for IE8 and earlier */
+  opacity: 0.35;
+  /* for IE9 and other browsers */
+}
+
+.transparent-30 {
+  filter: alpha(opacity=30);
+  /* for IE8 and earlier */
+  opacity: 0.3;
+  /* for IE9 and other browsers */
+}
+
+.transparent-25 {
+  filter: alpha(opacity=25);
+  /* for IE8 and earlier */
+  opacity: 0.25;
+  /* for IE9 and other browsers */
+}
+
+.transparent-20 {
+  filter: alpha(opacity=20);
+  /* for IE8 and earlier */
+  opacity: 0.2;
+  /* for IE9 and other browsers */
+}
+
+.transparent-15 {
+  filter: alpha(opacity=15);
+  /* for IE8 and earlier */
+  opacity: 0.15;
+  /* for IE9 and other browsers */
+}
+
+.transparent-10 {
+  filter: alpha(opacity=10);
+  /* for IE8 and earlier */
+  opacity: 0.1;
+  /* for IE9 and other browsers */
+}
+
+.transparent-5 {
+  filter: alpha(opacity=5);
+  /* for IE8 and earlier */
+  opacity: 0.05;
+  /* for IE9 and other browsers */
+}
+
+.title-module-N-normal {
+  text-shadow: 2px 2px 3px gray;
+}
+
+.border-n-down {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.8);
+}
+
+.title-module-N-normal-no-Shadow {
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.8);
+}
+
+.text-shadow-grey {
+  text-shadow: 2px 2px 2px rgba(217, 217, 217, 0.8);
+}
+
+.text-shadow-black {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}

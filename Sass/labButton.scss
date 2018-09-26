@@ -1,0 +1,50 @@
+$btn-height-normal:35px;
+$btn-width-normal:220px;
+
+%btn-feature{
+    border-radius: 5%;
+    text-align: center;
+}
+
+.btn{
+    @extend %btn-feature;
+    width: $btn-width-normal;
+    height: $btn-height-normal;
+    font-size: 14px;
+    
+}
+
+.btn-default{
+    $default-color:RGB(60,102,210);
+    color: white;
+    background-color:$default-color;
+    border-color:$default-color; 
+}
+.btn-default:hover{
+    $default-hover-color:RGB(5,45,146);
+    color: white;
+    background-color:$default-hover-color ;
+    border-color:$default-hover-color; 
+}
+       
+
+.btn-danger{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 35px;
+    border-radius: 4px;
+    color: white;  
+    letter-spacing: 3px;
+    font-size: 14px;  
+    font-weight: 400;
+    background-color: RGB(217,83,79);
+    border-color:  RGB(217,83,79);
+}
+.btn-danger:focus{
+    outline: none;
+    border:2px solid rgba(65, 183, 253, 1);   
+}
+.btn-danger:hover{
+  background-color:RGB(201,48,44);
+  border-color:  RGB(201,48,44);
+}

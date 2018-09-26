@@ -293,7 +293,6 @@ $opacity-val:50;
 }
 
 /* Panel  */
-  
 $panel-gap:10px;
 
 .layout-panel{
@@ -305,7 +304,7 @@ $panel-gap:10px;
         border:1px solid RGB(221,221,221);
         background-color: RGB(245,245,245);
         font-weight: 300;
-        font-size: 18px;
+        font-size: 18px; 
     }   
     .layout-panel-content{
         padding: 10px;
@@ -315,9 +314,16 @@ $panel-gap:10px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-    .layout-panel-title-info{
+}
+
+.layout-panel-info{
+    .layout-panel-title{
         background-color: RGB(51,122,183);
         color: white;
+    }
+    .layout-panel-content{
+        border: 1px solid RGB(51,122,183);
+        border-top: none;
     }
 }
 

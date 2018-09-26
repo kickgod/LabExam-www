@@ -3,3 +3,7 @@ a {
   color: skyblue;
   font-size: 14px;
 }
+
+textarea {
+  resize: vertical;
+}

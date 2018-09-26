@@ -165,3 +165,24 @@
   outline: none;
   border: 2px solid #41b7fd;
 }
+
+.form-textbox-N-help-contact {
+  text-indent: 15px;
+  border-radius: 5px;
+  width: 400px;
+  height: 35px;
+}
+
+.form-textbox-N-help-contact:focus {
+  outline: none;
+}
+
+.form-select-N-help-contactWay {
+  height: 37px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.form-select-N-help-contactWay:focus {
+  outline: none;
+}

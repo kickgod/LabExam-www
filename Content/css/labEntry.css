@@ -811,9 +811,14 @@
   border-bottom-right-radius: 5px;
 }
 
-.layout-panel .layout-panel-title-info {
+.layout-panel-info .layout-panel-title {
   background-color: RGB(51, 122, 183);
   color: white;
+}
+
+.layout-panel-info .layout-panel-content {
+  border: 1px solid RGB(51, 122, 183);
+  border-top: none;
 }
 
 .layout-Prismatic {
@@ -1040,6 +1045,10 @@ a {
   text-decoration: none;
   color: skyblue;
   font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
 }
 
 /*
@@ -1639,6 +1648,27 @@ a {
 .text-box-shuaxing:focus {
   outline: none;
   border: 2px solid #41b7fd;
+}
+
+.form-textbox-N-help-contact {
+  text-indent: 15px;
+  border-radius: 5px;
+  width: 400px;
+  height: 35px;
+}
+
+.form-textbox-N-help-contact:focus {
+  outline: none;
+}
+
+.form-select-N-help-contactWay {
+  height: 37px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.form-select-N-help-contactWay:focus {
+  outline: none;
 }
 
 .list .list-item {

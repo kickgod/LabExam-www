@@ -1,0 +1,28 @@
+.title-student-name{
+    font-size: 17px;
+    font-weight: 600;
+    &.title-shadow{
+        text-shadow: 2px 2px 2px rgba(38, 38, 38, .5);
+    }
+}
+
+.word-one{
+    font-size: 16px;    
+}
+
+.title-name-little{
+    font-size: 14px;
+    font-weight: 300px;
+    letter-spacing: 1px;
+}
+
+$font-size-gap:30;
+@while  $font-size-gap>=10 {
+    .font-size-#{$font-size-gap}{
+         font-size:  $font-size-gap + 0px;
+    }
+    $font-size-gap: $font-size-gap - 1;
+}
+.text-red{
+    color: red;
+}

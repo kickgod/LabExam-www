@@ -522,3 +522,8 @@
 .boder-down-grey {
   border-bottom: 1px solid gainsboro;
 }
+
+.progress-define-self {
+  width: 300px;
+  height: 15px;
+}

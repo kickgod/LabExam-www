@@ -466,6 +466,10 @@
   background-color: white;
 }
 
+.bc-clr-black {
+  background-color: RGB(44, 44, 44);
+}
+
 .border-thumali {
   border-radius: 10px;
   border: 1px solid rgba(38, 38, 38, 0.2);

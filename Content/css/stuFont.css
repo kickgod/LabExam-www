@@ -197,3 +197,17 @@
   font-size: 15px;
   padding-right: 15px;
 }
+
+.font-first-word::first-letter {
+  color: rgba(19, 34, 122, 0.9);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-border-cicle {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+  border: 1px solid gainsboro;
+}

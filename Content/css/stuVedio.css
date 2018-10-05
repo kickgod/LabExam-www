@@ -8,5 +8,22 @@
 }
 
 .vedio-control {
+  border-radius: 5px;
+  padding: 10px;
   background-color: RGB(243, 245, 247);
+}
+
+.vedio-control > .glyphicon {
+  padding: 7px;
+  background-color: gray;
+  color: white;
+  font-size: 17px;
+}
+
+.vedio-open-need-waiting-list .color-grey {
+  color: rgba(38, 38, 38, 0.8);
+}
+
+.vedio-open-need-waiting-list .color-red {
+  color: red;
 }

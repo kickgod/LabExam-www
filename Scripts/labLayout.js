@@ -54,8 +54,12 @@ window.onload=function(){
         $('.mask').hide();
     });
 
+
+ 
     setMask();
     setContentCenter();
     setFlexHeightHalf();
+
+    
 
 }

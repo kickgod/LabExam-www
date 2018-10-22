@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,22 @@
         .mask-content{
             width: 600px;
         }
+        a{
+            color:cornflowerblue;
+        }
+        a:hover{
+            color:darkblue;
+            font-weight: 600;  
+        }
     </style>
     <title>实验室安全教育在线-登陆</title>
 </head>
-<body class=" ">
-    <div id="Login" class="br-white  layout-center  padding-15 box-sizing-include-padding-border">
+<body class="bc-clr-grey-little">
+    <div id="Login" class="border-thumali bc-clr-white  layout-center  padding-15 box-sizing-include-padding-border">
         <div>
-            <img src="../Resources/Img/run.png" class="layout-image-center"  width="64px" />   
+            <img src="../Resources/Img/run.png" class="layout-image-center img-hover-func"  width="64px" />   
         </div>
-        <div class="text-center text-title-little font-color-grey-more">
+        <div class=" text-center margin-top-10px font-color-grey-more">
            四川师范大学安全教育在线
         </div>
         <form>
@@ -35,7 +42,7 @@
                     <img src="../Resources/LoginIcon/ID_NO_Lanse.png" width="40px" class="layout-image-right">
                 </div>
                 <div class="flex-item-8 margin-left-30px">
-                  <input type="text" placeholder="请输入账号" class="textBox text-indent-15px " />
+                  <input type="text" id="UserID" placeholder="请输入账号" class="textBox text-indent-15px " />
                 </div>
             </div>
             <div class="form-group flex-layout flex-direction-row flex-wrap-nowrap" >
@@ -43,7 +50,7 @@
                     <img src="../Resources/LoginIcon/password.png" width="38px" class="layout-image-right">
                 </div>
                 <div class="flex-item-8 margin-left-30px">
-                    <input type="text" placeholder="请输入账号" class="textBox text-indent-15px " />
+                    <input type="password" id="UserPassword" placeholder="请输入密码" class="textBox text-indent-15px " />
                 </div>
             </div>
             <div class="form-group flex-layout flex-direction-row flex-wrap-nowrap ">
@@ -51,12 +58,12 @@
                     
                 </div>
                 <div class="flex-item-8 margin-left-30px padding-left-10px">
-                    <input type="text" value="5" class="textBox-square text-center" >
+                    <input id="num1" type="text" value="5" class="textBox-square text-center" disabled >
                     <span class=" padding-left-right-normal "> + </span>
-                    <input type="text" value="5" class="textBox-square text-center" >
+                    <input id="num2" type="text" value="5" class="textBox-square text-center" disabled>
                     <span class=" padding-left-right-normal "> = </span>
-                    <input type="text" value="10" class="textBox-square-answer text-center" >
-                    <button type="button" class="margin-left-20px text-box-shuaxing ">刷新</button>
+                    <input id="num3" type="number" value="" class="textBox-square-answer text-center" >
+                    <button  type="button" class="margin-left-20px text-box-shuaxing ">刷新</button>
                 </div>
                 
             </div>
@@ -73,32 +80,68 @@
                      
                 </div>
                 <div class="flex-item-8 margin-left-30px float-layout padding-left-10px">
-                    <label><input type="checkbox" checked > <span class="font-size-sm font-color-grey-more">十天之内自动登陆 </span> </label>
-                    /<a href="#"> 忘记密码/修改密码</a>  
+                    <a href="#"> 忘记密码 / 修改密码</a>  
                 </div>
             </div>
         </form>
     </div>  
+    <div class="mask" data-mask-target="#mask-info">
+    </div>
+    <div id="mask-info" class=" mask-content">
+        <div class="mask-module-title">
+            消息提示！
+        </div>
+        <div class="mask-module-content">
+                请回答问题！
+            
+        </div>
+        <div class="mask-module-close">
+             <button class=" btn btn-danger layout-image-center"> 立即关闭</button>
+        </div>
+    </div>
     <div>
         <div class="main text-center font-color-grey-more position-fixed" style="bottom: 0px;left: 0px; width: 100%;">
              <small>© All Right Reserved . 四川师范大学计算机科学学院 版权所有 版本号1.0.0.2018.9</small>
         </div>
      </div>
-     <!--
-              <div class="mask">
-
-     </div>
-     <div class="mask-content">
-         <div class="mask-module-title">
-             错误信息
-         </div>
-         <div class="mask-module-content">
-            你的密码输入错误！请重新输入
-         </div>
-         <div class="mask-module-close">
-            <button class="layout-image-center btn-danger">立即关闭</button> 
-         </div>
-     </div>
-     -->
 </body>
+<script>
+    function getRandom(){
+        let rand  = Math.round( Math.random() * 20 );
+        let rand2 = Math.round(Math.random() * 20 );
+        $('#num1').val(rand);
+        $('#num2').val(rand2);
+    }
+    function onMask(title,content){
+        var target =  $(".mask").css("display","block").attr('data-mask-target');
+        $(target).css("display","block");
+        $(`${target} > .mask-module-title`).text(title);
+        $(`${target} > .mask-module-content`).text(content);
+    }
+    
+    getRandom();
+    $(function(){
+        $('.text-box-shuaxing').on('click',null,null,getRandom);
+        $('#Login [type="submit"').on('click',null,null,function(jqEvent){
+
+            let UserName =parseInt($('#num1').val());
+            let UserPassword = parseInt($('#num2').val());
+            let result = UserName + UserPassword ;
+            let valnum3 =$('#num3').val();
+            
+            if( valnum3 == "" || valnum3 == null){
+                onMask("温馨提示","请回答这种小学生题目！");
+                jqEvent.preventDefault();
+                return;
+            }   
+            if(result == parseInt(valnum3) ){
+
+            }else{
+                onMask("气氛提示","小学生的题目都不会！ 你还是一个大学生"); 
+                jqEvent.preventDefault();
+            }
+            
+        })
+    })
+</script>
 </html>

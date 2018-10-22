@@ -67,6 +67,10 @@ $navbar-height:70px;
                 padding-left: 15px;
                 display: inline-block;
                 vertical-align: bottom; 
+                transition: 1s;
+            }
+            .logo-font:hover{
+                font-size: 26px;
             }
         }  
         .navbar-nav{
@@ -86,8 +90,11 @@ $navbar-height:70px;
                     color: RGB(44,44,44);    
                     font-weight:500;  
                     font-size: 14px; 
+                }
+                a:hover{
+                    font-weight: 600;
                 } 
-            }    
+            }     
         }
     } 
 }
@@ -167,3 +174,32 @@ $jumbotron-height :420px;
     flex-shrink:1; 
     flex-basis: $main-min-width*0.25;  
 }   
+
+.Img-center-rotation{
+    animation-name: Circle-rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:linear;
+}
+
+@keyframes Circle-rotation{
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.Font-center-rotationZ{
+    
+    animation-name: Font-Circle-rotationZ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:linear;
+}
+
+@keyframes Font-Circle-rotationZ{
+    from {
+        transform: rotateY(0deg); 
+    }
+    to { transform: rotateY(360deg); }
+}

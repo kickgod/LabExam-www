@@ -48,6 +48,10 @@
   box-shadow: 0px 3px 6px 0px rgba(38, 38, 38, 0.5);
 }
 
+.bc-clr-spacial {
+  background-color: RGB(245, 246, 250);
+}
+
 .border-radius-30 {
   border-radius: 30px;
 }
@@ -108,8 +112,72 @@
   border-radius: 2px;
 }
 
+.border-radius-30:focus {
+  outline: none;
+}
+
+.border-radius-28:focus {
+  outline: none;
+}
+
+.border-radius-26:focus {
+  outline: none;
+}
+
+.border-radius-24:focus {
+  outline: none;
+}
+
+.border-radius-22:focus {
+  outline: none;
+}
+
+.border-radius-20:focus {
+  outline: none;
+}
+
+.border-radius-18:focus {
+  outline: none;
+}
+
+.border-radius-16:focus {
+  outline: none;
+}
+
+.border-radius-14:focus {
+  outline: none;
+}
+
+.border-radius-12:focus {
+  outline: none;
+}
+
+.border-radius-10:focus {
+  outline: none;
+}
+
+.border-radius-8:focus {
+  outline: none;
+}
+
+.border-radius-6:focus {
+  outline: none;
+}
+
+.border-radius-4:focus {
+  outline: none;
+}
+
+.border-radius-2:focus {
+  outline: none;
+}
+
 .border-light-down {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-little-grey-all {
+  border: 1px solid gainsboro;
 }
 
 .border-shadow-down {
@@ -298,4 +366,17 @@
   text-align: center;
   font-size: 12px;
   border-radius: 50%;
+}
+
+.select-default {
+  border-radius: 5px;
+  width: 80px;
+  height: 25px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.select-default:focus {
+  outline: none;
+  border: 1px solid RGB(51, 122, 183);
 }

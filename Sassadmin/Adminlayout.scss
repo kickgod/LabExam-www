@@ -102,7 +102,7 @@ $layout-gap:85px;
         z-index: 10;
     }
 }
-
+ 
 
 .ban-bootsrap-a-style{
     text-decoration: none;
@@ -116,4 +116,54 @@ $layout-gap:85px;
 }
 .ban-bootsrap-a-style:link{
     text-decoration: none;
+}
+
+$z-index-top-max:10000;     // 一个页面最多8层 不能使用其他数字 默认为 0 
+$z-index-top:1000; 
+$z-index-center-max:500;
+$z-index-center:250;
+$z-index-bottom-max:125;
+$z-index-Boundary:0;
+$z-index-bottom:-75; 
+$z-index-down:-25;
+
+
+.z-index-top-max{
+    z-index:  $z-index-top-max; // 一个页面最多8层 不能使用其他数字 默认为 0 
+}
+.z-index-top{
+    z-index:  $z-index-top; 
+} 
+.z-index-center-man{
+    z-index: $z-index-center-max;
+}
+.z-index-center{
+    z-index: $z-index-center;
+}
+.z-index-bottom-max{
+    z-index: $z-index-bottom-max;
+}
+.z-index-bottom{
+    z-index: $z-index-bottom;
+}
+.z-index-down{
+    z-index: $z-index-down;
+}
+
+.overflow-y-scroll{
+    overflow-y: scroll;
+}
+
+.select-layout{
+    >option{
+        height: 25px;
+        padding: 5px 0;
+        font-size: 14px;
+    }
+}
+
+.layout-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

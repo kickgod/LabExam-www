@@ -13,7 +13,6 @@
     <link rel="icon" href="../Resources/Image/Icon/PageIconOnline.png" />
     <title>实验室安全教育在线-后台首页</title>
 </head>
-
 <body class=" bc-clr-grey-little">
     <div class="flex-layout">
         <div class=" flex-item-2 layout-height-100 bc-clr-black-web" data-max-width="220" data-min-width="220" style=" position: relative;">
@@ -31,6 +30,18 @@
                         <li><a href="#">2.学生列表</a></li>
                         <li><a href="#">3.管理学生</a></li>
                         <li><a href="#">4.总体情况</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../Resources/Admin/login/exam2016110418.svg" width="20" />
+                        <span>考试管理</span>
+                    </a>
+                    <ul>
+                        <li><a href="#">1.考试情况</a></li>
+                        <li><a href="#">2.考试试卷</a></li>
+                        <li><a href="#">3.生成试卷</a></li>
+                        <li><a href="#">4.出题历史</a></li>
                     </ul>
                 </li>
                 <li>
@@ -117,10 +128,10 @@
                                 管理员： 蒋廖周
                             </span>
                         </a>
-                        <ul>
-                            <li class="bc-clr-white border-thumali" data-height="280" data-width="300">
+                        <ul class="z-index-top" >
+                            <li class="bc-clr-white border-thumali" data-height="310" data-width="300">
                                 <div class=" border-light-down">
-                                    <h4 class=" text-primary font-weight-500 text-center">
+                                    <h4 class=" text-danger font-size-15 font-weight-600 text-center">
                                         <img src="../Resources/Admin/login/admin1.svg" width="20" class="icon-vertical" />
                                         管理员信息
                                     </h4>
@@ -149,62 +160,80 @@
                                     <span class="admin-user-title">权限拥有</span>
                                     <span class="admin-user-content margin-left-15px"> 部分权限 </span>
                                 </p>
+                                <p>
+                                    <span class="admin-user-title">登陆选项</span>
+                                    <button class="margin-left-15px btn btn-sm btn-danger">退出登录</button>
+                                </p>
                             </li>
                         </ul>
                     </li>
                 </ul>
                 <div class=" float-right padding-15px">
-                    <a href="#" data-toggle="modal" data-target="#User-warning" ><img src="../Resources/Admin/login/message2.svg" width="25">
-                        <span class="info-warning">5</span> </a>
+                    <a href="#" data-toggle="modal" data-target="#User-warning"><img src="../Resources/Admin/login/message2.svg"
+                            width="25">
+                        <span class="info-warning">1</span> </a>
                     <a href="#" data-toggle="modal" data-target="#User-danger" class=" margin-left-20px margin-right-10px ">
                         <img src="../Resources/Admin/login/message.svg" width="22">
-                        <span class="info-warning-green">5</span></a>
+                        <span class="info-warning-green">2</span></a>
                 </div>
             </div>
             <div class="margin-10px bc-clr-defalut">
-                <div class="padding-10px bc-clr-white">
-                    这是内容区域
-                </div>
+             
             </div>
         </div>
     </div>
     <div class="modal fade" id="User-warning" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">紧急信息</h4>
-            </div>
-            <div class="modal-body">
-                系统发生异常5起
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                <button type="button" class="btn btn-primary">立即处理</button>
-            </div>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">紧急信息</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class=" font-size-14 text-muted text-danger">1. 系统异常情况 今天发生异常
+                                <b class=" font-weight-600 font-color-white padding-left-5px padding-right-5px bc-clr-danger ">3</b>
+                                起 请联系技术人员 查看日志系统进行排查</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-danger">稍后处理</button>
+                </div>
             </div>
         </div>
     </div>
     <div class="modal fade" id="User-danger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">学生申请</h4>
-            </div>
-            <div class="modal-body">
-                学号206114215 的同学申请 重考 <br/>
-                学号206114215 的同学申请 重考<br/>
-                学号206114215 的同学申请 重考<br/>
-                学号206114215 的同学申请 重考<br/>
-            </div>
-            <div class="modal-footer">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title font-weight-600 padding-top-10px text-danger" id="myModalLabel">学生申请</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                当前有 <b class=" text-warning">3</b> 同学申请重新考试,请求老师批准 <a href="/Home/Index" class=" btn btn-sm btn-warning float-right">立即查看
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                新增尚未浏览的建议或投诉信息 <b class=" text-warning">3</b> 条
+                                <a href="/Home/Index" class=" btn btn-sm btn-primary float-right">立即查看 </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary">立即处理</button>
-            </div>
+                    <button type="button" class="btn btn-danger">稍后处理</button>
+                </div>
+                </div>
             </div>
         </div>
-    </div>    
+    </div>
 </body>
 <script>
     $(document).ready(function () {

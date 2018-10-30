@@ -70,6 +70,7 @@
     padding-left: 40px;
 }
 
+
 .admin-narbar-top{
     >ul{
         margin-bottom: 0px;
@@ -90,8 +91,79 @@
                 }
             }
         }
-        li:hover ul{
-            display: block;
-        }
+        // li:hover ul{
+        //     display: block;
+        // }
     }
+}
+
+
+.admin-module-list{
+    padding: 5px;
+    a{
+        display: block;
+        color: black;
+        padding: 3px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 13px;
+        text-align:left;
+        text-indent: 10px;
+    }
+    .active{
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        background-color: rgba(38,38,38,0.8);
+    }
+    a:hover{
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        background-color: rgba(38,38,38,0.8);
+    }
+    a:active{
+        text-decoration: none;
+    }
+    a:link{
+        text-decoration: none;
+    }
+}
+
+.admin—module-tab{
+    border-bottom:1px solid gainsboro; 
+    >a{
+        display: inline-block;
+        background-color: rgba(246,246,246,0.7);;
+        padding: 10px 20px;
+        border-left: 1px solid gainsboro; 
+        border-right:1px solid gainsboro; 
+        border-top:1px solid gainsboro; 
+    }
+}
+.admin-title-moudle{
+    border-left: 5px solid rgba(38,38,38,0.7);
+    border-right: 1px solid gainsboro ;
+    border-top: 1px solid gainsboro ;
+    border-bottom: 1px solid gainsboro ;
+    font-weight: 600;
+    vertical-align: middle;
+    background-color: RGB(245,246,250);
+    >.float-left{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-indent: 10px;
+        height: 40px;
+    }
+    >.float-right{
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+.module-list-item-info{
+    font-size: 14px;
+    color: gray;
+    display: inline-block;
+
 }

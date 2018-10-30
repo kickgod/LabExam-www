@@ -877,6 +877,56 @@
   display: none;
 }
 
+.new-bc-clr-grey-little {
+  background-color: rgba(246, 246, 246, 0.9);
+}
+
+.new-bc-clr-white {
+  background-color: white;
+}
+
+.new-bc-clr-black {
+  background-color: RGB(44, 44, 44);
+}
+
+.new-bc-clr-defalut {
+  background-color: #f4f4f4;
+}
+
+.new-bc-clr-primary {
+  background-color: #3073ac;
+}
+
+.new-bc-clr-success {
+  background-color: #58b258;
+}
+
+.new-bc-clr-info {
+  background-color: #57bedd;
+}
+
+.new-bc-clr-warning {
+  background-color: #f0aa46;
+}
+
+.new-bc-clr-danger {
+  background-color: #d34945;
+}
+
+.new-bc-clr-grey-ali {
+  background-color: #eaedf1;
+}
+
+.new-bc-clr-black-web {
+  background-color: RGB(54, 54, 54);
+}
+
+.new-border-thumali {
+  border-radius: 10px;
+  border: 1px solid rgba(38, 38, 38, 0.2);
+  box-shadow: 0px 3px 6px 0px rgba(38, 38, 38, 0.5);
+}
+
 /*start **************** Global Variable */
 /*end **************** Global Variable */
 .navbar-top {

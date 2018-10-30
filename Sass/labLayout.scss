@@ -379,3 +379,43 @@ $Prismatic-height-value: 32px;
         display: none;
     }
 }
+
+.new-bc-clr-grey-little{
+    background-color: rgba(246,246,246,0.9);
+}
+.new-bc-clr-white{
+    background-color: white;
+}
+.new-bc-clr-black{
+    background-color:RGB(44,44,44);
+}
+
+.new-bc-clr-defalut{
+    background-color: rgba(244,244,244,1);
+}
+.new-bc-clr-primary{
+    background-color: rgba(48,115,172,1);
+}
+.new-bc-clr-success{
+    background-color: rgba(88,178,88,1);
+}
+.new-bc-clr-info{
+    background-color: rgba(87,190,221,1);
+}
+.new-bc-clr-warning{
+    background-color: rgba(240,170,70,1);
+}
+.new-bc-clr-danger{
+    background-color: rgba(211,73,69,1);
+}
+.new-bc-clr-grey-ali{
+    background-color: rgba(234,237,241,1);
+}
+.new-bc-clr-black-web{
+    background-color: RGB(54,54,54);
+}
+.new-border-thumali{ 
+    border-radius: 10px;
+    border: 1px solid rgba(38,38,38,.2);
+    box-shadow: 0px 3px 6px 0px rgba(38,38,38,0.5);
+}

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="zh-cmn-Hans">
 <head>
 <meta charset="utf-8" />
@@ -82,3 +83,346 @@ h1{clear:both;padding-top:10px;font-size:16px;font-family:Arial;}
 </body>
 </html>
 			
+=======
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../Scripts/jquery-3.3.1.min.js"></script>
+    <link  href="../Content/bootstrap.min.css" >
+    <style>
+        /* 以下实际使用若已初始化可删除 .nav height父级需逐级设置为100%*/
+        body,
+        html {
+            height: 100%;
+            background: #E2E2E2
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            font: 14px "微软雅黑", "宋体", "Arial Narrow", HELVETICA;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        li {
+            list-style: none
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* 以上实际使用若已初始化可删除 */
+
+        /* nav */
+        .nav {
+            width: 220px;
+            height: 100%;
+            background: #263238;
+            transition: all .2s;
+            float: left;
+        }
+
+        .nav a {
+            display: block;
+            overflow: hidden;
+            padding-left: 20px;
+            line-height: 46px;
+            max-height: 46px;
+            color: #ABB1B7;
+            transition: all .3s;
+        }
+
+        .nav a span {
+            margin-left: 30px;
+            margin-right: 60px;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-item.nav-show {
+            border-bottom: none;
+        }
+
+        .nav-item ul {
+            display: none;
+            background: rgba(0, 0, 0, .1);
+        }
+
+        .nav-item.nav-show ul {
+            display: block;
+        }
+
+        .nav-item>a:before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            width: 5px;
+            height: 46px;
+            background: #34A0CE;
+            opacity: 0;
+            transition: all .2s;
+        }
+
+        .nav-show,
+        .nav-item>a:hover {
+            color: #FFF;
+            background: rgba(0, 0, 0, .1);
+        }
+
+        .nav-show>a:before,
+        .nav-item>a:hover:before {
+            opacity: 1;
+        }
+
+        .nav-item li:hover a {
+            color: #FFF;
+            background: rgba(0, 0, 0, .1);
+        }
+
+        /* nav-mini */
+        .nav-mini.nav {
+            width: 60px;
+        }
+
+        .nav-mini.nav .nav-item>a span {
+            display: none;
+        }
+
+        .nav-mini.nav .nav-item ul {
+            position: absolute;
+            top: 0px;
+            left: 60px;
+            width: 180px;
+            z-index: 99;
+            background: #3C474C;
+            overflow: hidden;
+        }
+
+        .nav-mini.nav .nav-item:hover {
+            background: rgba(255, 255, 255, .1);
+        }
+
+        .nav-mini.nav .nav-item:hover .nav-item a {
+            color: #FFF;
+        }
+
+        .nav-mini.nav .nav-item:hover a:before {
+            opacity: 1;
+        }
+
+        .nav-mini.nav .nav-item:hover ul {
+            display: block;
+        }
+
+        .examIcon {
+            vertical-align: middle;
+            width: 20px;
+            height: 21px;
+        }
+
+        .more {
+            vertical-align: middle;
+            width: 10px;
+            height: 10px;
+        }
+
+
+        /* nav2 */
+        .nav2 {
+            height: 50px;
+            width: calc(100% - 220px);
+            float: right;
+            background-color: rgb(245, 245, 245);
+        }
+
+        .nav2-max {
+            height: 50px;
+            width: calc(100% - 60px);
+            float: right;
+            background-color: rgb(245, 245, 245);
+        }
+
+        .content {
+            min-width: 800px;
+
+        }
+
+        .teacher {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 15px;
+            margin-left: 100px;
+            float: left;
+        }
+
+        .box {
+            display: inline-block;
+            margin-right: 100px;
+            float: right;
+        }
+
+        .box1 a,
+        .box2 a {
+            height: 20px;
+            width: 20px;
+        }
+
+        .box1 ul {
+            position: absolute;
+            top: 35px;
+            right: 5px;
+            width: 150px;
+            z-index: 100;
+            background: rgb(255, 255, 255);
+            text-align: center;
+            display: none;
+        }
+
+        .box ul li {
+            margin: 8px;
+        }
+
+        .box ul span{
+            margin-left: 5px;
+        }
+
+
+        .box2 ul {
+            position: absolute;
+            top: 35px;
+            right: -40px;
+            width: 150px;
+            z-index: 99;
+            background: rgb(255, 255, 255);
+            text-align: center;
+            display: none;
+        }
+
+        .box1 img:hover ul {
+            display: block;
+        }
+
+        .box1,
+        .box2 {
+            width: 30px;
+            height: 20px;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+
+        .messageImg {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .clear {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 侧边导航 -->
+    <div class="nav">
+        <div class="nav-top">
+            <div id="mini" style="border-bottom:1px solid rgba(255,255,255,.1)"><img src="../Resources/Admin/login/mini.png" alt="点击伸缩"></div>
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a href="javascript:;">
+                    <img src="../Resources/Admin/login/exam1.svg" class="examIcon">
+                    <span>网站配置</span>
+                    <img src="../Resources/Admin/login/open.svg" class="more">
+                </a>
+                <ul>
+                    <li><a href="javascript:;"><span>网站设置</span></a></li>
+                    <li><a href="javascript:;"><span>友情链接</span></a></li>
+                    <li><a href="javascript:;"><span>分类管理</span></a></li>
+                    <li><a href="javascript:;"><span>系统日志</span></a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;">
+                    <img src="../Resources/Admin/login/exam2.svg" class="examIcon">
+                    <span>文章管理</span><img src="img/open.svg"class="more">
+                </a>
+                <ul>
+                    <li><a href="javascript:;"><span>站内新闻</span></a></li>
+                    <li><a href="javascript:;"><span>站内公告</span></a></li>
+                    <li><a href="javascript:;"><span>登录日志</span></a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;">
+                    <img src="../Resources/Admin/login/exam3.svg" class="examIcon">
+                    <span>订单管理</span><img src="../Resources/Admin/login/open.svg" class="more">
+                </a>
+                <ul>
+                    <li><a href="javascript:;"><span>订单列表</span></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    $(function () {
+
+        $('.nav-item>a').on('click', function () {
+            if (!$('.nav').hasClass('nav-mini')) {
+                if ($(this).next().css('display') == "none") {
+                    $('.nav-item').children('ul').slideUp(300);
+                    $(this).next('ul').slideDown(300);
+                    $(this).parent('li').addClass('nav-show').siblings('li').removeClass('nav-show');
+                } else {
+                    $(this).next('ul').slideUp(300);
+                    $('.nav-item.nav-show').removeClass('nav-show');
+                }
+            }
+
+        });
+
+        $('#mini').on('click', function () {
+            if (!$('.nav').hasClass('nav-mini')) {
+                $('.nav-item.nav-show').removeClass('nav-show');
+                $('.nav2').addClass('nav2-max');
+                $('.nav-item').children('ul').removeAttr('style');
+                $('.nav').addClass('nav-mini');
+            } else {
+                $('.nav').removeClass('nav-mini');
+                $('.nav2').removeClass('nav2-max');
+
+            }
+        });
+
+        $('.box1 a').hover(function () {
+            $('.box1 ul').css("display", "block");
+        }, function () {
+            $('.box1 ul').css("display", "none");
+        });
+
+        $('.box2 a').hover(function () {
+            $('.box2 ul').css("display", "block");
+        }, function () {
+            $('.box2 ul').css("display", "none");
+        });
+
+    });
+</script>
+
+</html>
+>>>>>>> deve

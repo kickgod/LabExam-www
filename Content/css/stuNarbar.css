@@ -149,5 +149,45 @@
   padding-bottom: 10px;
   font-size: 16px;
   font-weight: 300px;
+<<<<<<< HEAD
   border-bottom: 1px solid rgba(38, 38, 138, 0.1);
+=======
+  border-bottom: 1px solid rgba(38, 38, 138, 0.25);
+}
+
+.stu-nav-list > .stu-nav-list-item {
+  color: grey;
+  text-align: center;
+}
+
+.stu-nav-list > .stu-nav-list-item a {
+  display: block;
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.stu-nav-list > .stu-nav-list-item.stu-nav-list-item-active {
+  background-color: rgba(240, 20, 20, 0.99);
+  color: white;
+}
+
+.stu-nav-list > .stu-nav-list-item.stu-nav-list-item-active > a {
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.stu-nav-list > .stu-nav-list-item.stu-nav-list-item-active a:hover {
+  font-size: 15px;
+}
+
+.stu-nav-list > .stu-nav-list-item.stu-nav-list-item-active:hover a {
+  color: white;
+}
+
+.stu-nav-list > .stu-nav-list-item:hover a {
+  color: rgba(240, 20, 20, 0.99);
+>>>>>>> deve
 }

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../Scripts/ECharts/echarts.min.js"></script> <!-- 加载Echarts 和主题 -->
+    <script src="../Scripts/ECharts/macarons.js"></script>
+    <title>Index 主页</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .EchartsPanel{
+            padding: 15px;
+        }
+        .EchartsPanel>div{
+            float: left;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .EchartsPanel::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        #DegreeOfCompletion{
+            width: 400px;
+            height: 300px;
+        }
+        #accessDataChart{
+            width: 400px;
+            height: 300px;
+        }
+        #ExamWhat{
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="EchartsPanel">
+            <div id="accessDataChart" ></div>
+        <div id="DegreeOfCompletion" ></div>
+
+
+
+        <div id="ExamWhat"></div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    var chart = echarts.init(document.getElementById('DegreeOfCompletion'), 'macarons');
+    chart.setOption({
+        title:{
+            text:'考试进行状态'
+        },
+        tooltip : {
+            formatter: "{a} <br/>{b} : {c}%"
+        },
+        toolbox: {
+            feature: {
+                restore: {},
+
+            }
+        },
+        series: [
+            {
+                name: '业务指标',
+                type: 'gauge',
+                detail: {formatter:'{value}%'},
+                data: [{value: 45.2, name: '考试完成率'}]
+            }
+        ]
+    });
+</script>
+<script  type="text/javascript">
+    var chart_access = echarts.init(document.getElementById('accessDataChart'), 'macarons');
+    chart_access.setOption({
+            tooltip : {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross',
+                    label: {
+                        backgroundColor: '#6a7985'
+                    }
+                }
+            },
+            legend: {
+                data:['视频学习','参加考试','考试通过','访问人数']
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : ['3/1','3/2','3/3','3/4','3/5','3/6','3/7']
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'视频学习',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {},
+                    data:[120, 132, 101, 134, 90, 230, 210]
+                },
+                {
+                    name:'参加考试',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {},
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                },
+                {
+                    name:'考试通过',
+                    type:'line',
+                    stack: '总量',
+                    areaStyle: {},
+                    data:[150, 232, 201, 154, 190, 330, 410]
+                },
+                {
+                    name:'访问人数',
+                    type:'line',
+                    stack: '总量',
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'top'
+                        }
+                    },
+                    areaStyle: {normal: {}},
+                    data:[820, 932, 901, 934, 1290, 1330, 1320]
+                }
+            ]
+        });
+</script>
+<script type="text/javascript">
+    var chart_Exam = echarts.init(document.getElementById('ExamWhat'), 'macarons');
+    chart_Exam.setOption(
+        {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data:['考试通过','考而未过','学而未考','未学未考','尚未参加']
+            },
+            series: [
+                {
+                    name:'访问来源',
+                    type:'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:[
+                        {value:335, name:'考试通过'},
+                        {value:310, name:'考而未过'},
+                        {value:234, name:'学而未考'},
+                        {value:135, name:'未学未考'},
+                        {value:1548, name:'尚未参加'}
+                    ]
+                }
+            ]
+        })
+</script>
+</html>

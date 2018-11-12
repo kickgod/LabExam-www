@@ -1,5 +1,5 @@
 $layout-gap:85px;
-@while $layout-gap >= 5px {
+@while $layout-gap >= 0px {
     .margin-top-#{$layout-gap}{
         margin-top: $layout-gap;
     }
@@ -166,4 +166,27 @@ $z-index-down:-25;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.layout-display-inline-block{
+    display: inline-block;
+}
+.layout-display-block{
+    display: block;
+}
+.layout-display-none{
+    display: none;
+}
+
+@each $var in baseline , sub , super , top , text-top , middle , bottom , text-bottom{
+    .vertical-align-#{$var}{
+        vertical-align:$var;
+    }
+}
+$letter-space:10;
+@while $letter-space > 0 {
+    .letter-spacing-#{$letter-space} {
+        letter-spacing: $letter-space + 0px;
+    }
+    $letter-space: $letter-space - 1
 }

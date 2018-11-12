@@ -2,7 +2,8 @@ $(function(){
     // 全高度
     function set_layout_height_100(){
         let winHeights =[$(window).height(),$(document).height(),$(document.body).height(),$(document.body).outerHeight(true)];
-        var maxHeight = winHeights.sort((one,two)=> one < two)[0];        
+        var maxHeight = winHeights.sort((one,two)=> one < two)[0];
+        //maxHeight = $(window).height() ;   
         $('.layout-height-100').height(maxHeight);
         return maxHeight;
     }

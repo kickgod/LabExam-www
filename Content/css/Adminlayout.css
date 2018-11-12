@@ -679,6 +679,46 @@
   padding: 5px;
 }
 
+.margin-top-0px {
+  margin-top: 0px;
+}
+
+.margin-bottom-0px {
+  margin-bottom: 0px;
+}
+
+.margin-left-0px {
+  margin-left: 0px;
+}
+
+.margin-right-0px {
+  margin-right: 0px;
+}
+
+.padding-top-0px {
+  padding-top: 0px;
+}
+
+.padding-left-0px {
+  padding-left: 0px;
+}
+
+.padding-right-0px {
+  padding-right: 0px;
+}
+
+.padding-bottom-0px {
+  padding-bottom: 0px;
+}
+
+.margin-0px {
+  margin: 0px;
+}
+
+.padding-0px {
+  padding: 0px;
+}
+
 /*浮动布局*/
 .float-layout .float-left {
   float: left;
@@ -933,4 +973,88 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.layout-display-inline-block {
+  display: inline-block;
+}
+
+.layout-display-block {
+  display: block;
+}
+
+.layout-display-none {
+  display: none;
+}
+
+.vertical-align-baseline {
+  vertical-align: baseline;
+}
+
+.vertical-align-sub {
+  vertical-align: sub;
+}
+
+.vertical-align-super {
+  vertical-align: super;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+
+.vertical-align-text-top {
+  vertical-align: text-top;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.vertical-align-bottom {
+  vertical-align: bottom;
+}
+
+.vertical-align-text-bottom {
+  vertical-align: text-bottom;
+}
+
+.letter-spacing-10 {
+  letter-spacing: 10px;
+}
+
+.letter-spacing-9 {
+  letter-spacing: 9px;
+}
+
+.letter-spacing-8 {
+  letter-spacing: 8px;
+}
+
+.letter-spacing-7 {
+  letter-spacing: 7px;
+}
+
+.letter-spacing-6 {
+  letter-spacing: 6px;
+}
+
+.letter-spacing-5 {
+  letter-spacing: 5px;
+}
+
+.letter-spacing-4 {
+  letter-spacing: 4px;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 3px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
 }

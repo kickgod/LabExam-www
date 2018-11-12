@@ -171,8 +171,36 @@
                 </div>
             </div>
             <div class="margin-10px bc-clr-defalut">
-                <div class=" margin-5px bc-clr-white padding-10px " data-height-all>
-                    <div id="tablist-hover" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class=" margin-5px bc-clr-white  padding-10px " data-height-all>
+                    <div id="tablist-hover">
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
                                 <a href="#InstituteList" aria-controls="home" role="tab" data-toggle="tab">学院列表
@@ -182,14 +210,14 @@
                                     data-toggle="tab">添加学院</a>
                             </li>
                             <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
-                                学院信息</a>
+                                    学院信息</a>
                             </li>
                         </ul>
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="InstituteList">
-                                <div class=" margin-bottom-10px margin-top-10px">
-                                    <label class=" font-size-15 text-info">学院名称:</label>
+                                <div class="bc-clr-white margin-bottom-10px margin-top-10px padding-10px float-layout">
+                                    <label class=" font-size-13 font-weight-500 ">学院名称:</label>
                                     <input type="text" list="InstituteName" class="border-radius-4 padding-left-10px"
                                         data-width="200" data-height="25" />
                                     <datalist id="InstituteName" class="border-radius-4 padding-left-10px" data-width="200"
@@ -199,7 +227,7 @@
                                         <option value="物理与信息电子学院">
                                         <option value="工学院">
                                     </datalist>
-                                    <label class=" font-size-15 text-info margin-left-10px">所属模块:</label>
+                                    <label  class=" font-size-13 font-weight-500 ">所属模块:</label>
                                     <select name="module" id="module" class="border-radius-4 padding-left-10px select-layout"
                                         data-width="200" data-height="28">
                                         <option value="12">所有学院</option>
@@ -207,13 +235,18 @@
                                         <option value="12">物理信息类</option>
                                         <option value="12">文史艺体类</option>
                                     </select>
-                                    <a href="#" class=" btn btn-primary btn-sm margin-left-10px">立即查询</a>
+                                    <a href="#" class="float-right btn btn-primary btn-sm margin-left-10px"> 
+                                        <span class="glyphicon glyphicon-search"></span>    
+                                        立即查询
+                                    </a>
                                 </div>
-                                <div class="table-responsive">
+
+
+                                <div class="table-responsive bc-clr-white">
                                     <table class="table table-hover" data-min-width="700">
                                         <thead>
                                             <tr>
-                                                <th>#</th>
+                                                <th class=" text-center">编号</th>
                                                 <th>学院名称</th>
                                                 <th>人数</th>
                                                 <th>男女比例</th>
@@ -227,7 +260,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>1</td>
+                                                <td class=" text-center">1</td>
                                                 <td>计算机科学学院</td>
                                                 <th>835(人)</th>
                                                 <td>3:1</td>
@@ -236,14 +269,17 @@
                                                 <td>正常</td>
                                                 <td>
                                                     <a href="#" data-toggle="modal" data-target="#deleteInstitute"
-                                                        class=" btn btn-default btn-sm">删除</a>
+                                                        class=" btn btn-primary btn-sm">
+                                                        <span class="glyphicon glyphicon-remove"></span>
+                                                        删除</a>
                                                     <a data-toggle="modal" data-target="#updateInsititute" href="#updateInsititute"
                                                         class=" btn btn-default btn-sm">
+                                                        <span class="glyphicon glyphicon-search"></span>
                                                         修改</a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>2</td>
+                                                <td class=" text-center">2</td>
                                                 <td>地理信息科学学院</td>
                                                 <th>335(人)</th>
                                                 <td>3:1</td>
@@ -251,13 +287,13 @@
                                                 <td>其他理工类</td>
                                                 <td>正常</td>
                                                 <td>
-                                                    <a href="#" class=" btn btn-default btn-sm" data-toggle="modal"
-                                                        data-target="#deleteInstitute">删除</a>
-                                                    <a href="#" class=" btn btn-default btn-sm">修改</a>
+                                                    <a href="#" class=" btn btn-primary btn-sm" data-toggle="modal"
+                                                        data-target="#deleteInstitute"> <span class="glyphicon glyphicon-remove"></span> 删除</a>
+                                                    <a href="#" class=" btn btn-default btn-sm">  <span class="glyphicon glyphicon-search"></span> 修改</a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>3</td>
+                                                <td class=" text-center">3</td>
                                                 <td>物理与信息电子学院</td>
                                                 <th>735(人)</th>
                                                 <td>3:1</td>
@@ -265,34 +301,54 @@
                                                 <td>暂无所属</td>
                                                 <td>正常</td>
                                                 <td>
-                                                    <a href="#" class=" btn btn-default btn-sm">删除</a>
-                                                    <a href="#" class=" btn btn-default btn-sm">修改</a>
+                                                        <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
+                                                        <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
 
-                                <div class=" text-center">
-                                    <nav aria-label="Page navigation">
-                                        <ul class="pagination">
-                                            <li>
-                                                <a href="#" aria-label="Previous">
-                                                    <span aria-hidden="true">&laquo;</span>
-                                                </a>
-                                            </li>
-                                            <li><a href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">5</a></li>
-                                            <li>
-                                                <a href="#" aria-label="Next">
-                                                    <span aria-hidden="true">&raquo;</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
+                                <div class=" float-layout bc-clr-white padding-10px ">
+                                        <label class=" float-left">
+                                            共 78 个学院
+                                        </label>
+                                        <div class=" float-right">
+                                            <a  href="#" class=" btn-default btn btn-sm ">
+                                                <span>第</span>
+                                                <span class="page-Index">
+                                                    1
+                                                </span>
+                                                <span>
+                                                    /
+                                                </span>
+                                                <span class="page-count">
+                                                    12
+                                                </span>
+                                                <span>
+                                                    页
+                                                </span>
+                                            </a>
+                                            <a href="#" class="page-first btn btn-success btn-sm"> <span class="glyphicon glyphicon-backward"></span> </span> 首页</a>
+                                            <a href="#" class="Previous btn btn-success btn-sm"  > <span class="glyphicon glyphicon-chevron-left"></span> 上一页</a>
+                                            <a href="#" class="Next btn btn-success btn-sm">下一页 <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                                            <a href="#" class="page-last btn btn-success btn-sm">尾页 <span class="glyphicon glyphicon-forward"></span> </a>
+                                            <select  class=" margin-left-10px" data-height="27" data-width="45">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <a href="#" class=" btn btn-sm btn-primary"  >跳转</a>
+                                        </div>
                                 </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="addInstitute">
@@ -315,7 +371,7 @@
                                         data-width="400">立即提交</button>
                                 </form>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="messages"  >
+                            <div role="tabpanel" class="tab-pane" id="messages">
                                 <div id="widthYouNeedKnow">
                                     <div class="margin-5px">
                                         <div class="admin-title-moudle padding-left-10px">
@@ -341,12 +397,57 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div id="InstituteChart" style="height:500px;"  >
+                                <div id="InstituteChart" style="height:500px;">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </div>
     </div>
@@ -504,22 +605,22 @@
             bottom: '3%',
             containLabel: true
         },
-        axisPointer:{
+        axisPointer: {
 
         },
-        toolbox:{
-            orient:"horizontal",
-            feature:{
-                saveAsImage:{
-                    type:"png",
-                    name:"各学院未通过人数报表",
-                    iconStyle:{
+        toolbox: {
+            orient: "horizontal",
+            feature: {
+                saveAsImage: {
+                    type: "png",
+                    name: "各学院未通过人数报表",
+                    iconStyle: {
                         shadowColor: 'rgba(0, 0, 0, 0.2)',
                         shadowBlur: 10
                     }
                 },
-                dataView: {readOnly: false},
-                magicType: {type: ['line', 'bar']},
+                dataView: { readOnly: false },
+                magicType: { type: ['line', 'bar'] },
                 restore: {}
             }
         },
@@ -604,27 +705,27 @@
                         formatter: "{c} 人"
                     }
                 },
-                markPoint:{
-                    symblo:'roundRect',
-                    data : [
-                        {type : 'max', name: '最大值'},
-                        {type : 'min', name: '最小值'}
+                markPoint: {
+                    symblo: 'roundRect',
+                    data: [
+                        { type: 'max', name: '最大值' },
+                        { type: 'min', name: '最小值' }
                     ]
                 },
-                markLine : {
-                    data : [
-                        {type : 'average', name: '平均值'}
+                markLine: {
+                    data: [
+                        { type: 'average', name: '平均值' }
                     ]
                 }
             }
         ]
     };
-    $('#InstituteChart').css('width',$('#tablist-hover').width()+"px")
+    $('#InstituteChart').css('width', $('#tablist-hover').width() + "px")
     var InstituteChart_ = echarts.init(document.getElementById('InstituteChart'));
     InstituteChart_.setOption(option);
-    
-    window.onresize = function(){
-        $('#InstituteChart').css('width',$('#tablist-hover').width()+"px");
+
+    window.onresize = function () {
+        $('#InstituteChart').css('width', $('#tablist-hover').width() + "px");
         InstituteChart_.resize();
     }
 

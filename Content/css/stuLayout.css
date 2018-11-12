@@ -466,13 +466,10 @@
   background-color: white;
 }
 
-<<<<<<< HEAD
-=======
 .bc-clr-black {
   background-color: RGB(44, 44, 44);
 }
 
->>>>>>> deve
 .border-thumali {
   border-radius: 10px;
   border: 1px solid rgba(38, 38, 38, 0.2);
@@ -525,8 +522,6 @@
   border-bottom: 1px solid rgba(38, 38, 38, 0.1);
   margin-top: 10px;
 }
-<<<<<<< HEAD
-=======
 
 .boder-down-grey {
   border-bottom: 1px solid rgba(38, 38, 38, 0.1);
@@ -711,4 +706,3 @@
 .applicationForm:focus {
   outline: none;
 }
->>>>>>> deve

@@ -12,6 +12,7 @@
     <script src="../Scripts/App/adminEntry.js"></script>
     <link rel="icon" href="../Resources/Image/Icon/PageIconOnline.png" />
     <script src="../Scripts/ECharts/echarts.min.js"></script>
+    <script src="../Scripts/ECharts/westeros.js"></script>
     <title>实验室安全教育在线-后台首页</title>
 </head>
 
@@ -169,7 +170,7 @@
             </div>
             <div class="margin-10px bc-clr-defalut">
                 <div class=" flex-layout">
-                    <div class=" flex-item-4 bc-clr-white margin-5px" id="ChartExamInfo">
+                    <div class=" flex-item-4 bc-clr-white border-little-grey-all margin-5px" id="ChartExamInfo">
                         <div id="Chart-Exam-info" style="width:100%; height:320px;">
 
                         </div>
@@ -188,7 +189,7 @@
                             <span>3:1</span>
                         </div>
                     </div>
-                    <div class=" flex-item-8 bc-clr-white margin-5px">
+                    <div class=" flex-item-8 bc-clr-white border-little-grey-all margin-5px">
                         <div style="width:100%; height:320px;" id="LoginStatus">
 
                         </div>
@@ -206,7 +207,7 @@
                     </div>
                 </div>
                 <div class=" flex-layout">
-                    <div class="flex-item-4  bc-clr-white margin-5px padding-10px">
+                    <div class="flex-item-4  bc-clr-white border-little-grey-all margin-5px padding-10px">
                         <h4 class="border-light-down padding-bottom-10px ">系统基本数据信息 <small>统计时间:2018/11/5 15:32</small>
                         </h4>
                         <div class=" padding-5px">
@@ -242,7 +243,7 @@
                             <span class="label label-success"> 开放</span>
                         </div>
                     </div>
-                    <div class="flex-item-3  bc-clr-white margin-5px padding-10px">
+                    <div class="flex-item-3 border-little-grey-all bc-clr-white margin-5px padding-10px">
                         <div id="WebSiteCalloption" style=" width:100%; height:270px" >
 
                         </div>
@@ -253,104 +254,13 @@
                                 <option value="2016">2016届</option>
                             </select> <button class=" btn btn-primary btn-sm " data-height="15">重新加载</button>
                     </div>
-                    <div class="flex-item-5  bc-clr-white margin-5px padding-10px">
+                    <div class="flex-item-5 border-little-grey-all bc-clr-white margin-5px padding-10px">
                         <div id="ModelStatus" style=" width:100%; height:300px">
 
                         </div>
                     </div>
                 </div>
-                <div class=" flex-layout">
-                    <div class=" flex-item-7 bc-clr-white margin-5px padding-10px">
-                        <table class="table table-hover">
-                            <caption>管理员列表</caption>
-                            <thead>
-                                <tr>
-                                    <th>编号</th>
-                                    <th>姓名</th>
-                                    <th>工号</th>
-                                    <th>性别</th>
-                                    <th>操作总数</th>
-                                    <th>最后一次登录</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Bangalore</td>
-                                    <td>560001</td>
-                                    <td>女</td>
-                                    <td>56</td>
-                                    <td>2018/5/6 15:32</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Bangalore</td>
-                                    <td>560001</td>
-                                    <td>女</td>
-                                    <td>56</td>
-                                    <td>2018/5/6 15:32</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Bangalore</td>
-                                    <td>560001</td>
-                                    <td>女</td>
-                                    <td>56</td>
-                                    <td>2018/5/6 15:32</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Bangalore</td>
-                                    <td>560001</td>
-                                    <td>男</td>
-                                    <td>56</td>
-                                    <td>2018/5/6 15:32</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class=" flex-item-4 bc-clr-white margin-5px padding-10px">
-                                <table class=" table table-hover">
-                                    <caption>管理员操作</caption>
-                                    <thead>
-                                        <tr>
-                                            <th>编号 #</th>
-                                            <th>ID</th>
-                                            <th>简记</th>
-                                            <th>操作时间</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>20185a6s4d</td>
-                                            <td>删除</td>
-                                            <td>2018/5/6 15:32</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>20185a6s4d</td>
-                                            <td>删除</td>
-                                            <td>2018/5/6 15:32</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>20185a6s4d</td>
-                                            <td>添加</td>
-                                            <td>2018/5/6 15:32</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>40185a6s4d</td>
-                                            <td>添加</td>
-                                            <td>2018/5/6 15:32</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                        </div>
 
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -432,7 +342,7 @@
         });
     });
 
-    var theme = "Deny";
+    var theme = "westeros";
     var option_exam = {
         title: {
             text: '系统成员分布',

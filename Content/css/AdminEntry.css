@@ -679,6 +679,46 @@
   padding: 5px;
 }
 
+.margin-top-0px {
+  margin-top: 0px;
+}
+
+.margin-bottom-0px {
+  margin-bottom: 0px;
+}
+
+.margin-left-0px {
+  margin-left: 0px;
+}
+
+.margin-right-0px {
+  margin-right: 0px;
+}
+
+.padding-top-0px {
+  padding-top: 0px;
+}
+
+.padding-left-0px {
+  padding-left: 0px;
+}
+
+.padding-right-0px {
+  padding-right: 0px;
+}
+
+.padding-bottom-0px {
+  padding-bottom: 0px;
+}
+
+.margin-0px {
+  margin: 0px;
+}
+
+.padding-0px {
+  padding: 0px;
+}
+
 /*浮动布局*/
 .float-layout .float-left {
   float: left;
@@ -935,6 +975,90 @@
   margin-right: auto;
 }
 
+.layout-display-inline-block {
+  display: inline-block;
+}
+
+.layout-display-block {
+  display: block;
+}
+
+.layout-display-none {
+  display: none;
+}
+
+.vertical-align-baseline {
+  vertical-align: baseline;
+}
+
+.vertical-align-sub {
+  vertical-align: sub;
+}
+
+.vertical-align-super {
+  vertical-align: super;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+
+.vertical-align-text-top {
+  vertical-align: text-top;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.vertical-align-bottom {
+  vertical-align: bottom;
+}
+
+.vertical-align-text-bottom {
+  vertical-align: text-bottom;
+}
+
+.letter-spacing-10 {
+  letter-spacing: 10px;
+}
+
+.letter-spacing-9 {
+  letter-spacing: 9px;
+}
+
+.letter-spacing-8 {
+  letter-spacing: 8px;
+}
+
+.letter-spacing-7 {
+  letter-spacing: 7px;
+}
+
+.letter-spacing-6 {
+  letter-spacing: 6px;
+}
+
+.letter-spacing-5 {
+  letter-spacing: 5px;
+}
+
+.letter-spacing-4 {
+  letter-spacing: 4px;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 3px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
 .bc-clr-grey-little {
   background-color: rgba(246, 246, 246, 0.9);
 }
@@ -1138,6 +1262,10 @@
   color: RGB(243, 191, 24);
 }
 
+.font-color-red-light {
+  color: RGB(255, 40, 81);
+}
+
 .font-weight-700 {
   font-weight: 700;
 }
@@ -1250,6 +1378,110 @@
   font-size: 10px;
 }
 
+.line-height-60 {
+  line-height: 60px;
+}
+
+.line-height-58 {
+  line-height: 58px;
+}
+
+.line-height-56 {
+  line-height: 56px;
+}
+
+.line-height-54 {
+  line-height: 54px;
+}
+
+.line-height-52 {
+  line-height: 52px;
+}
+
+.line-height-50 {
+  line-height: 50px;
+}
+
+.line-height-48 {
+  line-height: 48px;
+}
+
+.line-height-46 {
+  line-height: 46px;
+}
+
+.line-height-44 {
+  line-height: 44px;
+}
+
+.line-height-42 {
+  line-height: 42px;
+}
+
+.line-height-40 {
+  line-height: 40px;
+}
+
+.line-height-38 {
+  line-height: 38px;
+}
+
+.line-height-36 {
+  line-height: 36px;
+}
+
+.line-height-34 {
+  line-height: 34px;
+}
+
+.line-height-32 {
+  line-height: 32px;
+}
+
+.line-height-30 {
+  line-height: 30px;
+}
+
+.line-height-28 {
+  line-height: 28px;
+}
+
+.line-height-26 {
+  line-height: 26px;
+}
+
+.line-height-24 {
+  line-height: 24px;
+}
+
+.line-height-22 {
+  line-height: 22px;
+}
+
+.line-height-20 {
+  line-height: 20px;
+}
+
+.line-height-18 {
+  line-height: 18px;
+}
+
+.line-height-16 {
+  line-height: 16px;
+}
+
+.line-height-14 {
+  line-height: 14px;
+}
+
+.line-height-12 {
+  line-height: 12px;
+}
+
+.line-height-10 {
+  line-height: 10px;
+}
+
 .icon-vertical {
   display: inline-block;
   vertical-align: middle;
@@ -1316,6 +1548,79 @@
 .select-default:focus {
   outline: none;
   border: 1px solid RGB(51, 122, 183);
+}
+
+.clearStyle {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.clearStyle ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/*对checkbox 的重写*/
+input[type="checkbox"] + label::before {
+  content: "\a0";
+  /*不换行空格*/
+  display: inline-block;
+  vertical-align: .2em;
+  width: 15px;
+  height: 15px;
+  margin-right: .2em;
+  background-color: white;
+  border: 1px solid RGB(16, 142, 233);
+  text-indent: .14em;
+  line-height: 0.70;
+  /*行高不加单位，子元素将继承数字乘以自身字体尺寸而非父元素行高*/
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "\2713";
+  background-color: RGB(16, 142, 233);
+  color: white;
+  border: 1px solid RGB(16, 142, 233);
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+input[type="checkbox"]:hover + label::before {
+  background-color: RGB(16, 142, 233);
+}
+
+.input_text:focus {
+  outline: none;
+}
+
+.input_text {
+  border-radius: 3px;
+  text-indent: 5px;
+}
+
+.outline-none:focus {
+  outline: none;
+}
+
+.border-only-down {
+  text-indent: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.ul-li-margin > li {
+  margin-bottom: 7px;
+}
+
+.curcor-pointer li {
+  cursor: pointer;
+}
+
+.curcor-pointer label {
+  cursor: pointer;
 }
 
 .admin-navbar {
@@ -1502,4 +1807,76 @@
   font-size: 14px;
   color: gray;
   display: inline-block;
+}
+
+/*没有 bootstrap 版本*/
+.ban-bootsrap > input[type="checkbox"] + label::before {
+  content: "\a0";
+  /*不换行空格*/
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: .2em;
+  background-color: white;
+  border: 1px solid RGB(16, 142, 233);
+  text-indent: .11em;
+  vertical-align: baseline;
+  line-height: 0.70;
+  /*行高不加单位，子元素将继承数字乘以自身字体尺寸而非父元素行高*/
+}
+
+.ban-bootsrap > input[type="checkbox"]:checked + label::before {
+  content: "\2713";
+  background-color: RGB(16, 142, 233);
+  color: white;
+  border: 1px solid RGB(16, 142, 233);
+}
+
+.ban-bootsrap > input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.ban-bootsrap > input[type="checkbox"]:hover + label::before {
+  background-color: RGB(16, 142, 233);
+}
+
+.bootstrap-checkbox {
+  max-width: none;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.bootstrap-checkbox > input[type="checkbox"] + label::before {
+  content: "\a0";
+  /*不换行空格*/
+  display: inline-block;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: white;
+  vertical-align: baseline;
+  border: 1px solid RGB(16, 142, 233);
+}
+
+.bootstrap-checkbox > input[type="checkbox"]:checked + label::before {
+  content: "\2713";
+  background-color: RGB(16, 142, 233);
+  color: white;
+  line-height: 16px;
+}
+
+.bootstrap-checkbox > input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.bootstrap-checkbox > .checkout-label {
+  max-width: none;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 13px;
 }

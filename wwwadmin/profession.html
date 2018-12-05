@@ -230,7 +230,7 @@
                                             <th>专业类型</th>
                                             <th>所属学院</th>
                                             <th>状态</th>
-                                            <th>
+                                            <th class=" text-right">
                                                 操作
                                             </th>
                                         </tr>
@@ -242,7 +242,7 @@
                                             <td>本科专业</td>
                                             <th>计算机科学学院</th>
                                             <td>正常</td>
-                                            <td>
+                                            <td class=" text-right">
                                                 <a data-toggle="modal" data-target="#deleteprofessionl" href="#deleteprofessionl"
                                                     class=" btn btn-default btn-sm">
                                                     删除</a>
@@ -257,7 +257,7 @@
                                             <td>本科专业</td>
                                             <th>计算机科学学院</th>
                                             <td>正常</td>
-                                            <td>
+                                            <td class=" text-right">
                                                 <a href="#" class=" btn btn-default btn-sm" data-toggle="modal"
                                                     data-target="#deleteInstitute">删除</a>
                                                 <a href="#" class=" btn btn-default btn-sm">修改</a>
@@ -269,48 +269,55 @@
                                             <td>本科专业</td>
                                             <th>计算机科学学院</th>
                                             <td>正常</td>
-                                            <td>
-                                                <a href="#" class=" btn btn-default btn-sm">删除</a>
+                                            <td class=" text-right">
+                                                <a href="#" class=" btn btn-default btn-sm"> 删除</a>
                                                 <a href="#" class=" btn btn-default btn-sm">修改</a>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <div class=" text-center">
-                                    <label>第</label>
-                                    <span class="page-Index">
-                                        1
-                                    </span>
-                                    <span>
-                                        /
-                                    </span>
-                                    <span class="page-count">
-                                        12
-                                    </span>
-                                    <span>
-                                        页
-                                    </span>
-                                    <a href="#" class="page-first">首页</a>
-                                    <a href="#" class="Previous">上一页</a>
-                                    <a href="#" class="Next">下一页</a>
-                                    <a href="#" class="page-last">尾页</a>
-                                    <select data-height="20" data-width="50">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                    </select>
-                                    <label>
-                                        共 322 条
-                                    </label>
+                                    <div class=" float-layout bc-clr-white padding-10px ">
+                                        <label class=" float-left">
+                                            共 78 个专业
+                                        </label>
+                                        <div class=" float-right">
+                                            <a  href="#" class=" btn-default btn btn-sm ">
+                                                <span>第</span>
+                                                <span class="page-Index">
+                                                    1
+                                                </span>
+                                                <span>
+                                                    /
+                                                </span>
+                                                <span class="page-count">
+                                                    12
+                                                </span>
+                                                <span>
+                                                    页
+                                                </span>
+                                            </a>
+                                            <a href="#" class="page-first btn btn-success btn-sm"> <span class="glyphicon glyphicon-backward"></span> </span> 首页</a>
+                                            <a href="#" class="Previous btn btn-success btn-sm"  > <span class="glyphicon glyphicon-chevron-left"></span> 上一页</a>
+                                            <a href="#" class="Next btn btn-success btn-sm">下一页 <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                                            <a href="#" class="page-last btn btn-success btn-sm">尾页 <span class="glyphicon glyphicon-forward"></span> </a>
+                                            <select  class=" margin-left-10px" data-height="27" data-width="45">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <a href="#" class=" btn btn-sm btn-primary"  >跳转</a>
+                                        </div>
+                                </div>
                                 </div>
                             </div>
 
@@ -357,6 +364,22 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="modal fade" id="User-warning" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">

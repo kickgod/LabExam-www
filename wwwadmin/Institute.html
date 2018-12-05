@@ -199,7 +199,7 @@
 
 
 
-                <div class=" margin-5px bc-clr-white  padding-10px " data-height-all>
+                <div class=" margin-5px bc-clr-white  padding-10px border-little-grey-all " data-height-all>
                     <div id="tablist-hover">
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
@@ -720,6 +720,9 @@
             }
         ]
     };
+   
+   
+   
     $('#InstituteChart').css('width', $('#tablist-hover').width() + "px")
     var InstituteChart_ = echarts.init(document.getElementById('InstituteChart'));
     InstituteChart_.setOption(option);

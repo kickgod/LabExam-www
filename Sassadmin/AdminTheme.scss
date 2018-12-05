@@ -51,14 +51,6 @@ $radius-gap:30;
     }
     $radius-gap : $radius-gap - 2;
 }
-$radius-gap:30;
-
-@while $radius-gap > 0 {
-    .border-radius-#{$radius-gap}:focus{
-        outline: none;
-    }
-    $radius-gap : $radius-gap - 2;
-}
 
 .border-light-down{
     border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -90,7 +82,9 @@ $radius-gap:30;
     color: RGB(255,40,81);
 }
 
-
+.font-color-link{
+    color: RGB(51,122,183);
+}
 
 
 $weight-max:700;
@@ -251,4 +245,35 @@ input[type="checkbox"] {
    label{
         cursor: pointer;
    }
+
+   cursor: pointer;
+}
+
+@media screen and (min-width:992px){
+    .student-info-show{
+        margin-top: 2px;
+        .student-info-show-content{
+            padding-top: 10px;
+            .student-info-show-title{
+                display: inline-block;
+                text-align: center;
+                $val : 8px;
+                width: 110px;
+                font-size: 12px;
+                padding-top: $val;
+                padding-bottom: $val;
+                background-color:rgba(243,245,247,0.99);
+                font-weight: 600;
+            }
+            .student-info-show-value{
+                display: inline-block;
+                width: 580px;
+                padding-left: 30px;
+                padding-bottom: 5px;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+        }
+    
+    }
 }

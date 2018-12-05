@@ -181,36 +181,7 @@
                         <span class="info-warning-green">2</span></a>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <!-- 主要内容    -->
             <div class="margin-5px  ">
                 <div class="admin-searach">
                     <!-- 搜索栏 -->
@@ -256,18 +227,17 @@
                             <span for="studentNameId" class="margin-left-20px font-size-14 text-muted">学号：</span>
                             <input value="" type="text" id="studentNameId" name="studentNameId" data-height="22"
                                 data-width="160" class="font-size-12 padding-left-5px ">
-                            <button class="float-right  btn btn-sm btn-primary"> 
+                            <button class="float-right  btn btn-sm btn-primary">
                                 <span class="glyphicon glyphicon-search"></span>
-                                 立即搜索
+                                立即搜索
                             </button>
                         </form>
                     </div>
                     <!--  操作栏 -->
-                    <div class=" bc-clr-white margin-10px  padding-15px border-little-grey-all"
-                        data-min-width="1250">
+                    <div class=" bc-clr-white margin-10px  padding-15px border-little-grey-all" data-min-width="1250">
                         <label class=" bootstrap-checkbox">
-                            <input type="checkbox" id="examICan" />
-                            <label for="examICan" class="checkout-label"> 编号</label>
+                            <input type="checkbox" id="shooseAllCode" />
+                            <label for="shooseAllCode" class="checkout-label"> 编号</label>
                         </label>
 
                         <label class="margin-left-15px bootstrap-checkbox">
@@ -279,24 +249,25 @@
                             <label for="bks-student" class="checkout-label"> 本科生</label>
                         </label>
                         <span for="professionId" class="margin-left-20px font-size-14 text-muted">年级：</span>
-                        <select name="xsnj" id="xsnj"
-                            data-height="24"
-                            data-width="100" class="font-size-14 font-weight-600 padding-left-5px "
-                        >
+                        <select name="xsnj" id="xsnj" data-height="24" data-width="100" class="font-size-14 font-weight-600 padding-left-5px ">
                             <option id="2018">2018</option>
                             <option id="2017">2017</option>
                             <option id="2016">2016</option>
                             <option id="2015">2015</option>
                             <option id="2014">2014</option>
                         </select>
-                        <button class="margin-left-20px btn btn-sm btn-success"> <span class="glyphicon glyphicon-plus"></span> 添加学生</button>
-                        <button class=" btn btn-sm btn-success"> <span class="glyphicon glyphicon-plus-sign"></span> 导入学生</button>
-                        <button class=" btn btn-sm btn-primary"> <span class="glyphicon-ok glyphicon glyphicon-remove"></span> 删除选中</button>
-                        <button class=" btn btn-sm btn-default"> <span class="glyphicon glyphicon-remove-circle"></span> 清空筛选条件</button>
+                        <button class="margin-left-20px btn btn-sm btn-success"> <span class="glyphicon glyphicon-plus"></span>
+                            添加学生</button>
+                        <button class=" btn btn-sm btn-success"> <span class="glyphicon glyphicon-plus-sign"></span>
+                            导入学生</button>
+                        <button class=" btn btn-sm btn-primary" data-toggle="modal" data-target="#delete"> <span class="glyphicon-ok glyphicon glyphicon-remove"></span>
+                            删除选中</button>
+                        <button class=" btn btn-sm btn-default"> <span class="glyphicon glyphicon-remove-circle"></span>
+                            清空筛选条件</button>
                     </div>
                 </div>
                 <div class=" bc-clr-white margin-10px  padding-15px border-little-grey-all" data-min-width="1250">
-                    <table class="table table-hover">
+                    <table class="table table-hover" id="student-list">
                         <thead>
                             <tr>
                                 <th>编号</th>
@@ -348,8 +319,11 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm " data-toggle="modal" data-target="#delete">
+                                         <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm " data-toggle="modal" data-target="#UserDetail">
+                                        <span class="glyphicon glyphicon-search"></span> 详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -387,8 +361,11 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                        <button class=" btn btn-primary btn-sm " data-toggle="modal" data-target="#delete">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm " data-toggle="modal" data-target="#UserDetail">
+                                        <span class="glyphicon glyphicon-search"></span> 详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -426,8 +403,10 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm "> <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span>
+                                        详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -465,8 +444,10 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm "> <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span>
+                                        详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -504,8 +485,10 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm "> <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span>
+                                        详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -543,8 +526,10 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm "> <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span>
+                                        详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -582,8 +567,10 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm "> <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span>
+                                        详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -621,8 +608,10 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm "> <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span>
+                                        详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -660,8 +649,10 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm "> <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span>
+                                        详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -699,8 +690,10 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm "> <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span>
+                                        详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -738,8 +731,10 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm "> <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span>
+                                        详情</button>
                                 </td>
                             </tr>
                             <tr>
@@ -777,142 +772,62 @@
                                     511621199807091799
                                 </td>
                                 <td>
-                                    <button class=" btn btn-primary btn-sm ">  <span class="glyphicon glyphicon-remove"></span> 删除</button>
-                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span> 详情</button>
+                                    <button class=" btn btn-primary btn-sm "> <span class="glyphicon glyphicon-remove"></span>
+                                        删除</button>
+                                    <button class=" btn btn-default btn-sm "> <span class="glyphicon glyphicon-search"></span>
+                                        详情</button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                     <div class=" float-layout ">
-                            <label class=" float-left">
-                                共 322 名学生
-                            </label>
-                            <div class=" float-right">
-                                <a  href="#" class=" btn-default btn btn-sm ">
-                                    <span>第</span>
-                                    <span class="page-Index">
-                                        1
-                                    </span>
-                                    <span>
-                                        /
-                                    </span>
-                                    <span class="page-count">
-                                        12
-                                    </span>
-                                    <span>
-                                        页
-                                    </span>
-                                </a>
-                                <a href="#" class="page-first btn btn-success btn-sm"> <span class="glyphicon glyphicon-backward"></span> </span> 首页</a>
-                                <a href="#" class="Previous btn btn-success btn-sm"  > <span class="glyphicon glyphicon-chevron-left"></span> 上一页</a>
-                                <a href="#" class="Next btn btn-success btn-sm">下一页 <span class="glyphicon glyphicon-chevron-right"></span> </a>
-                                <a href="#" class="page-last btn btn-success btn-sm">尾页 <span class="glyphicon glyphicon-forward"></span> </a>
-                                <select  class=" margin-left-10px" data-height="27" data-width="45">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                </select>
-                                <a href="#" class=" btn btn-sm btn-primary"  >跳转</a>
-                            </div>
+                        <label class=" float-left">
+                            共 322 名学生
+                        </label>
+                        <div class=" float-right">
+                            <a href="#" class=" btn-default btn btn-sm ">
+                                <span>第</span>
+                                <span class="page-Index">
+                                    1
+                                </span>
+                                <span>
+                                    /
+                                </span>
+                                <span class="page-count">
+                                    12
+                                </span>
+                                <span>
+                                    页
+                                </span>
+                            </a>
+                            <a href="#" class="page-first btn btn-primary btn-sm"> <span class="glyphicon glyphicon-backward"></span>
+                                </span> 首页</a>
+                            <a href="#" class="Previous btn btn-primary btn-sm"> <span class="glyphicon glyphicon-chevron-left"></span>
+                                上一页</a>
+                            <a href="#" class="Next btn btn-primary btn-sm">下一页 <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                            <a href="#" class="page-last btn btn-primary btn-sm">尾页 <span class="glyphicon glyphicon-forward"></span>
+                            </a>
+                            <select class=" margin-left-10px text-center" data-height="27" data-width="45">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <a href="#" class=" btn btn-sm btn-primary">跳转</a>
+                        </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <!-- 主要内容 end    -->
         </div>
     </div>
     <div class="modal fade" id="User-warning" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -977,8 +892,140 @@
             </div>
         </div>
     </div>
+    <div class="modal fade " id="UserDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog  modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title font-weight-600 padding-top-10px text-info" id="myModalLabel">学生信息详情</h4>
+                </div>
+                <div class="modal-body" data-min-height="300">
+                    <div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">昵称</span>
+                                <span class="student-info-show-value border-light-down "> 李嘉坤</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">年级</span>
+                                <span class="student-info-show-value border-light-down "> 2018 级</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">学号</span>
+                                <span class="student-info-show-value border-light-down "> 2016110423</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">性别</span>
+                                <span class="student-info-show-value border-light-down "> 男</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">成绩</span>
+                                <span class="student-info-show-value border-light-down "> 85.5 [最好成绩]</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">身份</span>
+                                <span class="student-info-show-value border-light-down "> 本科生</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">学院</span>
+                                <span class="student-info-show-value border-light-down "> 计算机科学学院</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">专业</span>
+                                <span class="student-info-show-value border-light-down "> 软件工程</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">考试次数</span>
+                                <span class="student-info-show-value border-light-down "> 2  [次]</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">身份证号码</span>
+                                <span class="student-info-show-value border-light-down "> 5222624499705091755</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">登录次数</span>
+                                <span class="student-info-show-value border-light-down "> 56 [次]</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">申请重考次数</span>
+                                <span class="student-info-show-value border-light-down "> 0 [次]</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">学习时长</span>
+                                <span class="student-info-show-value border-light-down "> 150 [分钟]</span>
+                            </div>
+                        </div>
+                        <div class="student-info-show">
+                            <div class="student-info-show-content padding-left-10px">
+                                <span class="student-info-show-title">异常情况</span>
+                                <span class="student-info-show-value border-light-down "> 150 [分钟]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">立即关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title font-weight-600 padding-top-10px text-danger" id="myModalLabel">删除提示</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class=" text-danger font-size-14">
+                            1. 任何对于数据的删除请都谨慎
+                        </p>
+                        <p class=" text-danger font-size-14">
+                            2. 请确保没有与此相关联的数据
+                        </p>
+                        <p class=" text-danger font-size-14">
+                            3. 请注意相关联数据都会被删除掉
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-danger">立即删除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 </body>
 <script>
+    /*
+    StartLoading("#loading");
+    window.setTimeout(EndLoading,2000);
+    */
+
     $(document).ready(function () {
         $('.admin-navbar > li>a').on('click', null, null, function () {
             $('.admin-navbar > li>ul').slideUp();
@@ -990,6 +1037,12 @@
             $('.admin-navbar >li>a>span').removeClass('font-color-golden');
             $(this).find('span').addClass('font-color-golden');
         });
+
+        $('#shooseAllCode').on('click', function () {
+            $('#student-list > tbody > tr > td input[type=checkbox]').prop('checked', $(this).prop(
+                'checked'));
+        });
+
     });
 </script>
 

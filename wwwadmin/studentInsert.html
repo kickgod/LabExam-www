@@ -11,8 +11,9 @@
     <script src="../Scripts/bootstrap.min.js"></script>
     <script src="../Scripts/App/adminEntry.js"></script>
     <link rel="icon" href="../Resources/Image/Icon/PageIconOnline.png" />
-    <title>安全教育-后台首页</title>
+    <title>实验室安全教育在线-后台首页</title>
 </head>
+
 <body class=" bc-clr-grey-little">
     <div class="flex-layout">
         <div class=" flex-item-2 layout-height-100 bc-clr-black-web" data-max-width="220" data-min-width="220" style=" position: relative;">
@@ -181,6 +182,121 @@
                 </div>
             </div>
             <div class="margin-10px bc-clr-defalut">
+                <div class=" bc-clr-white padding-10px  border-little-grey-all" data-height-all>
+                    <h4 class="border-light-down font-size-15 font-weight-500 padding-bottom-10px ">
+                        <span class="glyphicon glyphicon-collapse-down"></span> 导入学生信息
+                        <small class=" padding-left-10px"> 请注意:按照规定的Excel格式 导入学生信息 </small>
+
+                    </h4>
+                    <form action="" class=" float-layout">
+                        <a class="btn btn-primary btn-sm">
+                            <input type="file" class="bootstrap-file-admin" />
+                        </a>
+                        <button class=" btn btn-primary btn-sm " style=" height:34px">立即上传文件</button>
+                        <span class=" glyphicon glyphicon-question-sign curcor-pointer " title="请注意了" data-container="body"
+                            data-toggle="popover" data-placement="right" data-content="仅仅支持Excel 格式的文件上传 请严格上传给定格式的Excel模板"></span>
+                        <a class=" btn btn-danger  float-right" href="#">下载标准导入Excel 模板</a>
+                    </form>
+                    <hr>
+                    <div class=" margin-top-10px">
+                        <div class="font-color-link font-size-12 text-center border-little-grey-all padding-5px bc-clr-grey-little  "
+                            data-width="120">
+                            上传文件分析结果
+                        </div>
+                        <div class=" padding-10px">
+                            <div class="student-info-show">
+                                <div class="student-info-show-content padding-left-10px">
+                                    <span class="student-info-show-title">上传学生总数:</span>
+                                    <span class="student-info-show-value border-light-down "> 5512 名</span>
+                                </div>
+                            </div>
+                            <div class="student-info-show">
+                                <div class="student-info-show-content padding-left-10px">
+                                    <span class="student-info-show-title">研究生总数:</span>
+                                    <span class="student-info-show-value border-light-down "> 1512 名</span>
+                                </div>
+                            </div>
+                            <div class="student-info-show">
+                                <div class="student-info-show-content padding-left-10px">
+                                    <span class="student-info-show-title">本科生总数:</span>
+                                    <span class="student-info-show-value border-light-down "> 4000 名</span>
+                                </div>
+                            </div>
+                            <div class="student-info-show">
+                                <div class="student-info-show-content padding-left-10px">
+                                    <span class="student-info-show-title">异常情况:</span>
+                                    <span class="student-info-show-value border-light-down font-size-13 text-danger">
+                                        无法识别文件内容</span>
+                                </div>
+                            </div>
+                            <div class="student-info-show">
+                                <div class="student-info-show-content padding-left-10px">
+                                    <span class="student-info-show-title">文件格式错误:</span>
+                                    <span class="student-info-show-value border-light-down ">
+                                        <label class=" label label-primary">无</label>
+                                        /
+                                        <label class=" label label-danger">有</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="student-info-show">
+                                <div class="student-info-show-content padding-left-10px">
+                                    <span class="student-info-show-title">异常情况:</span>
+                                    <label class=" margin-left-30px bootstrap-checkbox">
+                                        <input type="checkbox" id="isCanNewColleage" />
+                                        <label for="isCanNewColleage" class="checkout-label"> 是否允许增加新学院</label>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="student-info-show">
+                                <div class="student-info-show-content padding-left-10px">
+                                    <span class="student-info-show-title">异常情况:</span>
+                                    <label class=" margin-left-30px bootstrap-checkbox">
+                                        <input type="checkbox" id="isCanNewProfession" />
+                                        <label for="isCanNewProfession" class="checkout-label"> 是否允许增加新专业</label>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="student-info-show">
+                                <div class="student-info-show-content padding-left-10px">
+                                    <span class="student-info-show-title">继续操作:</span>
+                                    <button class=" btn btn-danger btn-sm   margin-left-30px">导入学生进入数据库</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class=" margin-10px">
+                            <div class="font-color-link font-size-12 text-center border-little-grey-all padding-5px bc-clr-grey-little  "
+                                data-width="120">
+                                导入数据库结果
+                            </div>
+                            <div class="student-info-show">
+                                <div class="student-info-show-content padding-left-10px">
+                                    <span class="student-info-show-title">重复学生数量:</span>
+                                    <span class="student-info-show-value border-light-down "> 12 名</span>
+                                </div>
+                                </div>
+                                <div class="student-info-show">
+                                    <div class="student-info-show-content padding-left-10px">
+                                        <span class="student-info-show-title">新增学院个数:</span>
+                                        <span class="student-info-show-value border-light-down "> 2 </span>
+                                    </div>
+                                </div>
+                                <div class="student-info-show">
+                                    <div class="student-info-show-content padding-left-10px">
+                                        <span class="student-info-show-title">新增专业个数:</span>
+                                        <span class="student-info-show-value border-light-down "> 25</span>
+                                    </div>
+                                </div>
+                                <div class="student-info-show">
+                                    <div class="student-info-show-content padding-left-10px">
+                                        <span class="student-info-show-title">成功导入数量:</span>
+                                        <span class="student-info-show-value border-light-down "> 25</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
 
 
 
@@ -214,10 +330,6 @@
 
 
 
-
-
-
-                
 
 
 
@@ -325,7 +437,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="update-inlow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"  >
+    <div class="modal fade" id="update-inlow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -334,7 +446,7 @@
                 </div>
                 <div class="modal-body">
                     修改中......
-                </div>  
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">稍后处理</button>
                 </div>
@@ -345,6 +457,11 @@
 </body>
 <script>
     $(document).ready(function () {
+
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+
         $('.admin-navbar > li>a').on('click', null, null, function () {
             $('.admin-navbar > li>ul').slideUp();
             if ($(this).next().css('display') == "block") {

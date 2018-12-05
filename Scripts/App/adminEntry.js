@@ -68,11 +68,60 @@ $(function(){
             content.css("display","none");
         }else{
             content.css("display","block");
-        }
-        
+        } 
     });
 
     $('#admin-only-show-505-content-cancel').on('click',null,null,function(){
         $('#admin-only-show-505-content').css("display","none");
     });
+
+
+    $('.line-height-all-clenter').css('line-height',function(index,lineheightValue){
+        let val_height = $(this).parent('').height()
+        let val_min_height = Number.parseInt($(this).parent().css('min-height'));
+        
+        return Math.max(val_height,val_min_height) + "px";
+    });
+
+    
+    /* 与加载动画有关的js 脚本 */ 
+    $('.loading-admin').css("top",function(index,value){
+
+        let this_height = $(this).find('.modal-body').height();
+        let page_height = $(window).height();
+
+
+        let val = page_height > this_height ? (page_height/2 - this_height - 100) + "px": "0";
+        console.info('tag', this_height); 
+        console.log(val);
+        return val;
+    });    
+
 });
+
+/* 与加载动画有关的js 脚本 */
+function StartLoading(target = ".loading-admin"){
+    appendLoadDom();
+    $(target).modal('show');
+};
+
+function EndLoading(target = ".loading-admin"){
+    $(target).modal('hide');
+};
+
+function appendLoadDom(){
+    $('body').append($(`
+        <div class="modal fade loading-admin" id="loading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" >
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div class="modal-body" data-min-height="80"  > 
+                        <div class="text-center line-height-all-clenter"  >
+                            <img src="../Resources/loading/Spinner-1s-200px.svg" data-height="70" > 
+                            <span class=" text-primary font-weight-600">拼命加载中...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    `));
+};

@@ -1,5 +1,82 @@
-<a href="#"  ><img src="../Resources/Admin/login/message2.svg" width="25">
-    <span class="info-warning">5</span> </a>
-<a href="#" class=" margin-left-20px margin-right-10px ">
-    <img src="../Resources/Admin/login/message.svg" width="22">
-    <span class="info-warning-green">5</span></a>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="../Content/bootstrap.min.css" /> -->
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <style>
+        .admin-file-basic{
+           font-size: 13px;
+           width: 100px;
+           height: 35px;
+           color: RGB(16,146,202);
+           background-color:black;
+           border:1px solid gray;
+        }
+        
+        .bootstrap-file-admin{
+            display: inline-block;
+            
+        }
+
+        .ban-bootstrap-file-admin{
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            border: 1px solid gray;
+            height: 30px;
+        }
+        
+        .ban-bootstrap-file-admin .open-file{
+            font-size: 12px;
+            letter-spacing: 2px;
+            line-height: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+           
+        }
+
+        .ban-bootstrap-file-admin input[type="file"]{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 500px;
+            height: 30px;
+        }
+        .ban-bootstrap-file-admin input[type="file"]:focus{
+            outline: none;  
+        }
+
+    </style>
+</head>
+<body class=" container ">
+    <br>
+
+    <span class="ban-bootstrap-file-admin">
+        <span class="open-file">请选择上传文件</span> 
+        <input type="file">
+    </span>
+
+    <br/> <br/> <br/> <br/>
+
+
+    <span class="fileinput-button"">
+        <span>上传</span>
+        <input type="file">
+    </span>
+
+    <br/> <br/> <br/> <br/>
+    <a class="btn btn-primary btn-sm">
+        <input type="file" class="bootstrap-file-admin" />
+    </a>
+    <button class=" btn btn-primary btn-sm " style=" height:34px"  >立即上传文件</button>
+</body>
+<script>
+    $('button').on('click',function(){
+        console.log(`filename: ${ $('input[type="file"]').val()}`);
+    });
+</script>
+</html>
